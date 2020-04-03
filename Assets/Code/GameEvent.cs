@@ -2,9 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameEvent : MonoBehaviour
+[CreateAssetMenu(fileName = "Event", menuName = "GameEvent/Event", order = 1)]
+public class GameEvent : ScriptableObject
 {
-    // Start is called before the first frame update
+    
+
+    public EventChoice[] Options;
+
+    public string title, flavorText;
     void Start()
     {
         
