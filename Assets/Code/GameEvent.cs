@@ -1,23 +1,63 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-[CreateAssetMenu(fileName = "Event", menuName = "GameEvent/Event", order = 1)]
+[CreateAssetMenu(fileName = "New Event", menuName = "GameEvent/Event", order = 1)]
+[ExecuteInEditMode]
 public class GameEvent : ScriptableObject
 {
+    public string title, flavorText;
+
+    public List<EventChoice> Options;
+    public List<Condition> Conditions; 
     
 
-    public EventChoice[] Options;
-
-    public string title, flavorText;
-    void Start()
+    public class Condition
     {
-        
+        Resource resource;
+        Compare compare;
+        int value;
+        DateTime date;
+
+        public bool IsMet()
+        {
+            //TODO:
+            //switch(resource)
+            //{
+            //    case Resource.Date:
+            //        {
+
+            //        } break;
+            //    default:
+            //        {
+
+            //        } break;
+            //}
+
+            return false;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
+
+}
+
+public enum Resource
+{
+    Allies,
+    Axis,
+    Soviets,
+    Food,
+    Iron,
+    Money,
+    Popularity,
+    Date
+}
+
+public enum Compare
+{
+    Equal,
+    Less,
+    More
 }
