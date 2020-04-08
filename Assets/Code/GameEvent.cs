@@ -10,7 +10,8 @@ public class GameEvent : ScriptableObject
     public string title, flavorText;
 
     public List<EventChoice> Options;
-    public List<Condition> Conditions; 
+    public List<Condition> Conditions;
+    public List<Effect> Effects;
     
 
     public class Condition
@@ -45,9 +46,9 @@ public class GameEvent : ScriptableObject
 
 public enum Resource
 {
-    Allies,
-    Axis,
-    Soviets,
+    AlliesOpinion, AlliesPower,
+    AxisOpinion, AxisPower,
+    SovietsOpinion, SovietPower,
     Food,
     Iron,
     Money,
