@@ -3,46 +3,88 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-[CreateAssetMenu(fileName = "New Event", menuName = "GameEvent/Event", order = 1)]
-[ExecuteInEditMode]
+
+[CreateAssetMenu(fileName = "New GenericEvent", menuName = "GameEvent/GenericEvent", order = 0)]
+[System.Serializable]
 public class GameEvent : ScriptableObject
 {
+    [SerializeField]
     public string title, flavorText;
-
+    [SerializeField]
     public List<EventChoice> Options;
-    public List<Condition> Conditions;
+    [SerializeField]
     public List<Effect> Effects;
     
+    public string GetTitle()
+    {
+        return title;
+    }
 
+    public string GetFlavorText()
+    {
+        return flavorText;
+    }
+
+    public List<EventChoice> GetOptions()
+    {
+        return Options;
+    }
+
+    public List<Effect> GetEffects()
+    {
+        return Effects;
+    }
+
+
+}
+[CreateAssetMenu(fileName = "New RandomEvent", menuName = "GameEvent/RandomEvent", order = 1)]
+[System.Serializable]
+public class RandomEvent : GameEvent
+{
+    [SerializeField]
+    Condition condition;
+
+    public Condition GetConditions()
+    {
+        return condition;
+    }
+
+    [System.Serializable]
     public class Condition
     {
-        Resource resource;
-        Compare compare;
-        int value;
-        DateTime date;
+        //TODO: Resource requirements
+        [SerializeField]
+        UDateTime minDate = (UDateTime)new DateTime(1066, 9, 25), maxDate = (UDateTime)DateTime.Today;
 
         public bool IsMet()
         {
-            //TODO:
-            //switch(resource)
-            //{
-            //    case Resource.Date:
-            //        {
 
-            //        } break;
-            //    default:
-            //        {
 
-            //        } break;
-            //}
+            if (minDate <= TimeMaster.GetTime() &&
+                maxDate >= TimeMaster.GetTime())
+            {
+                return true;
+            }
 
             return false;
         }
     }
-
-   
-
 }
+
+[CreateAssetMenu(fileName = "New TimelineEvent", menuName = "GameEvent/TimelineEvent", order = 2)]
+[System.Serializable]
+public class TimelineEvent : GameEvent
+{
+    [SerializeField]
+    UDateTime date;
+
+    public DateTime GetDate()
+    {
+        return date;
+    }
+}
+
+
 
 public enum Resource
 {
@@ -53,12 +95,7 @@ public enum Resource
     Iron,
     Money,
     Popularity,
-    Date
+    Size
 }
 
-public enum Compare
-{
-    Equal,
-    Less,
-    More
-}
+
