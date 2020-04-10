@@ -7,6 +7,7 @@ public class TimeTester : MonoBehaviour {
     void Start() {
         TimeMaster processor = FindObjectOfType<TimeMaster>();
         processor.onTick.AddListener(Tick);
+
     }
 
     void Tick() {

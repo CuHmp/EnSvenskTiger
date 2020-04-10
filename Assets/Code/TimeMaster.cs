@@ -15,7 +15,7 @@ public class TimeMaster : MonoBehaviour {
     private static float wait_timer = 4.0f;
     private static float delta_time = 0;
     private static int speed = 0;
-
+    private static int speedBeforePaused = 0;
     
     void Update() {
         if (delta_time > wait_timer / speed && speed != 0) {
@@ -39,6 +39,16 @@ public class TimeMaster : MonoBehaviour {
             day++;
         }
         onTick.Invoke();
+    }
+
+    public static void TogglePlay(bool play) {
+        if (!play) {
+            speedBeforePaused = speed;
+            speed = 0;
+        }
+        else {
+            speed = speedBeforePaused;
+        }
     }
 
     private static void ChangeSpeed() {
