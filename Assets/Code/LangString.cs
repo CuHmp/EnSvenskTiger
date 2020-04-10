@@ -14,6 +14,7 @@ public enum Language
 public class LangString 
 {
     [SerializeField]
+    [LabeledArray(typeof(Language))]
     string[] text = new string[(int)Language.Size];
 
     Language[] rightToLeft = { Language.Hebrew };
