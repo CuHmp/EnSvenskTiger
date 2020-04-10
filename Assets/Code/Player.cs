@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    static void AddToVars(List<Effect> effects)
+    public static void AddToVars(List<Effect> effects)
     {
         foreach (Effect e in effects)
         {

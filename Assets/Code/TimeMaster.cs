@@ -42,12 +42,13 @@ public class TimeMaster : MonoBehaviour {
     }
 
     private static void ChangeSpeed() {
-        if ((Input.GetKeyDown(KeyCode.Plus) || Input.GetKeyDown(KeyCode.Equals)) && speed < 5) {
+        if ((Input.GetKeyDown(KeyCode.Plus) || Input.GetKeyDown(KeyCode.Equals))) {
             speed++;
         }
-        if (Input.GetKeyDown(KeyCode.Minus) && speed > 0) {
+        if (Input.GetKeyDown(KeyCode.Minus)) {
             speed--;
         }
+        Mathf.Clamp(speed, 0, 5);
     }
 
     [System.Serializable]

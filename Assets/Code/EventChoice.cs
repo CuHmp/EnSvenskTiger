@@ -7,13 +7,13 @@ using UnityEngine;
 public class EventChoice 
 {
     [SerializeField]
-    string flavorText;
+    LangString flavorText;
     [SerializeField]
     List<Effect> effect;
 
     public string GetFlavorText()
     {
-        return flavorText;
+        return flavorText.GetText();
     }
 
     public List<Effect> GetEffects()
