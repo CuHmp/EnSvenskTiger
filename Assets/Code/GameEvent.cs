@@ -9,7 +9,7 @@ using System;
 public class GameEvent : ScriptableObject
 {
     [SerializeField]
-    public string title, flavorText;
+    public LangString title, flavorText;
     [SerializeField]
     public List<EventChoice> Options;
     [SerializeField]
@@ -17,12 +17,12 @@ public class GameEvent : ScriptableObject
     
     public string GetTitle()
     {
-        return title;
+        return title.GetText();
     }
 
     public string GetFlavorText()
     {
-        return flavorText;
+        return flavorText.GetText();
     }
 
     public List<EventChoice> GetOptions()
@@ -44,7 +44,7 @@ public class RandomEvent : GameEvent
     [SerializeField]
     Condition condition;
 
-    public Condition GetConditions()
+    public Condition GetCondition()
     {
         return condition;
     }
