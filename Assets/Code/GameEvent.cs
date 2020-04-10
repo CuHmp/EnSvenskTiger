@@ -9,11 +9,11 @@ using System;
 public class GameEvent : ScriptableObject
 {
     [SerializeField]
-    public LangString title, flavorText;
+    LangString title, flavorText;
     [SerializeField]
-    public List<EventChoice> Options;
+    EventChoice[] Options = new EventChoice[2];
     [SerializeField]
-    public List<Effect> Effects;
+    List<Effect> Effects;
     
     public string GetTitle()
     {
@@ -25,7 +25,7 @@ public class GameEvent : ScriptableObject
         return flavorText.GetText();
     }
 
-    public List<EventChoice> GetOptions()
+    public EventChoice[] GetOptions()
     {
         return Options;
     }

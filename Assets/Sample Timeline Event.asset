@@ -12,9 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Sample Timeline Event
   m_EditorClassIdentifier: Assembly-CSharp::TimelineEvent
-  title: Sample
-  flavorText: 'Boy I sure do love '
-  Options: []
+  title:
+    text:
+    - 
+    - 
+    - 
+  flavorText:
+    text:
+    - 
+    - 
+    - 
+  Options:
+  - flavorText:
+      text: []
+    effect: []
   Effects:
   - changeValue: 1
     resource: 0

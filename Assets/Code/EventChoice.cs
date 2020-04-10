@@ -7,7 +7,7 @@ using UnityEngine;
 public class EventChoice 
 {
     [SerializeField]
-    LangString flavorText;
+    LangString flavorText = new LangString();
     [SerializeField]
     List<Effect> effect;
 
