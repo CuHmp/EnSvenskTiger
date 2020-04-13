@@ -8,7 +8,7 @@ public class GameSettings : ScriptableObject
 
     public static void SetLang(Language newLang)
     {
-        if (newLang != Language.Size)
+        if (newLang != Language.Count)
         {
             lang = newLang;
         }

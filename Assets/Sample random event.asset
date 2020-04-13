@@ -12,9 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Sample random event
   m_EditorClassIdentifier: Assembly-CSharp::RandomEvent
-  title: 
-  flavorText: 
-  Options: []
+  title:
+    text:
+    - Sample
+    - Urval
+    - "\u05D3\u05D5\u05D2\u05DE\u05D0"
+  flavorText:
+    text:
+    - Sample
+    - Urval
+    - "\u05D3\u05D5\u05D2\u05DE\u05D0"
+  Options:
+  - flavorText:
+      text: []
+    effect: []
+  - flavorText:
+      text: []
+    effect: []
   Effects: []
   condition:
     minDate:
