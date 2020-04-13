@@ -7,7 +7,7 @@ public enum Language
     English,
     Swedish,
     Hebrew,
-    Size
+    Count
 }
 
 [System.Serializable]
@@ -15,7 +15,7 @@ public class LangString
 {
     [SerializeField]
     [LabeledArray(typeof(Language))]
-    string[] text = new string[(int)Language.Size];
+    string[] text = new string[(int)Language.Count];
 
     Language[] rightToLeft = { Language.Hebrew };
     
