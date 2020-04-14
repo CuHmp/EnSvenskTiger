@@ -12,13 +12,23 @@ public class TimeMaster : MonoBehaviour {
     private static int year = 1939;
 
     //time tick variables
-    private static float wait_timer = 4.0f;
+    private static float wait_timer = 3.5f;
     private static float delta_time = 0;
-    private static int speed = 0;
-    private static int speedBeforePaused = 0;
-    
+    private static int[] speed = { 0, 2, 4, 6, 8 };
+    private static int speed_index = 0;
+
+    private static int speedBeforePaused = 1;
+
+    private static bool is_game_paused = false;
+    private System.DateTime EndDate = new System.DateTime(1945, 5, 9);
+    private void Awake() {
+
+        TogglePlay(false);
+        speedBeforePaused = 1;
+    }
+
     void Update() {
-        if (delta_time > wait_timer / speed && speed != 0) {
+        if ((delta_time > wait_timer / speed[speed_index] && speed_index != 0) && GetTime() < EndDate) {
             TimeTick();
             delta_time = 0;
         }
@@ -43,22 +53,26 @@ public class TimeMaster : MonoBehaviour {
 
     public static void TogglePlay(bool play) {
         if (!play) {
-            speedBeforePaused = speed;
-            speed = 0;
+            speedBeforePaused = speed_index;
+            speed_index = 0;
         }
         else {
-            speed = speedBeforePaused;
+            speed_index = speedBeforePaused;
         }
     }
 
     private static void ChangeSpeed() {
         if ((Input.GetKeyDown(KeyCode.Plus) || Input.GetKeyDown(KeyCode.Equals))) {
-            speed++;
+            speed_index++;
         }
         if (Input.GetKeyDown(KeyCode.Minus)) {
-            speed--;
+            speed_index--;
         }
-        Mathf.Clamp(speed, 0, 5);
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            is_game_paused = !is_game_paused;
+            TogglePlay(is_game_paused);
+        }
+        Mathf.Clamp(speed_index, 0, 4);
     }
 
     [System.Serializable]
@@ -71,6 +85,6 @@ public class TimeMaster : MonoBehaviour {
         return new System.DateTime(year, month, day);
     }
     public static int GetGameSpeed() {
-        return speed;
+        return speed_index;
     }
 }
