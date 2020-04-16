@@ -58,4 +58,9 @@ public class Effect
         return resource;
     }
 
+    public int GetResourceInt()
+    {
+        return (int)resource;
+    }
+
 }

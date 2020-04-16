@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    static int[] Resources = new int[(int)Resource.Size];
+    static int[] Resources = new int[(int)Resource.Count];
 
     [SerializeField]
     GameEvent initVals;
@@ -12,29 +12,41 @@ public class Player : MonoBehaviour
  
     void Awake()
     {
-        SetVars(initVals.GetEffects());
+        SetResources(initVals.GetEffects());
     }
 
 
-    void SetVars(List<Effect> effects)
+    public static void SetResources(List<Effect> effects)
     {
         foreach (Effect e in effects)
         {
-            if (e.GetResource() != Resource.Size)
+            if (e.GetResource() != Resource.Count)
             {
                 Resources[(int)e.GetResource()] = e.GetValue();
             }
         }
+
+        ClampResources();
     }
 
-    public static void AddToVars(List<Effect> effects)
+    public static void AddResources(List<Effect> effects)
     {
         foreach (Effect e in effects)
         {
-            if (e.GetResource() != Resource.Size)
+            if (e.GetResource() != Resource.Count)
             {
                 Resources[(int)e.GetResource()] += e.GetValue();
             }
+        }
+
+        ClampResources();
+    }
+
+    static void ClampResources()
+    {
+        foreach (int i in Resources)
+        {
+            Mathf.Clamp(i, 0, 10);
         }
     }
 }

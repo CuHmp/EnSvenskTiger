@@ -37,6 +37,7 @@ public class GameEvent : ScriptableObject
 
 
 }
+
 [CreateAssetMenu(fileName = "New RandomEvent", menuName = "GameEvent/RandomEvent", order = 1)]
 [System.Serializable]
 public class RandomEvent : GameEvent
@@ -95,7 +96,7 @@ public enum Resource
     Iron,
     Money,
     Popularity,
-    Size
+    Count
 }
 
 

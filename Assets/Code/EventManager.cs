@@ -15,12 +15,16 @@ public class EventManager : MonoBehaviour
 
     List<GameEvent> PastEvents;
     List<GameEvent> EventQueue;
+
+    [SerializeField]
+    EventWindow eventWindow;
     int[] RandomEventDates = { 1, 4, 7, 10 };
+
     void Awake()
     {
         tm = FindObjectOfType<TimeMaster>();
         tm.onTick.AddListener(EventChecker);
-
+        eventWindow.gameObject.SetActive(false);
     }
 
     void Update()
@@ -33,26 +37,12 @@ public class EventManager : MonoBehaviour
 
     void ExecuteEvent(GameEvent e)
     {
-        if (e.GetType() == typeof(TimelineEvent))
-        {
-            ExecuteEvent((TimelineEvent)e);
-        }
-        else if (e.GetType() == typeof(RandomEvent))
-        {
-            ExecuteEvent((RandomEvent)e);
-        }
+        eventWindow.gameObject.SetActive(true);
+        eventWindow.LaunchEvent(e);
+        AddToPastEvents(e);
     }
 
 
-    void ExecuteEvent(TimelineEvent e)
-    {
-        // TODO
-    }
-
-    void ExecuteEvent(RandomEvent e)
-    {
-        // TODO
-    }
 
 
 
