@@ -178,7 +178,7 @@ public enum Resource
 {
     AlliesOpinion, AlliesPower,
     AxisOpinion, AxisPower,
-    SovietsOpinion, SovietPower,
+    SovietOpinion, SovietPower,
     Food,
     Iron,
     Money,

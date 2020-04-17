@@ -1825,12 +1825,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 93b7cf8865c7668468c3fff9be895170, type: 3}
   - {fileID: 21300000, guid: aca1620af0b513a4fae467037502dd3a, type: 3}
   - {fileID: 21300000, guid: 7be2202146fbf8a43abd674a885b74b3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: bc2554dd4cd706240bc69521373a6202, type: 3}
+  - {fileID: 21300000, guid: d0daf01244009c345b81de2ab15e1864, type: 3}
+  - {fileID: 21300000, guid: 0290ef7f6504cca4e923e87ebd97aac2, type: 3}
+  - {fileID: 21300000, guid: 0083cf84354eb234c89cf38384554bda, type: 3}
+  - {fileID: 21300000, guid: 4b9a5c096d1ccd440a50f05814d75b78, type: 3}
+  - {fileID: 21300000, guid: d8bd052faaff20c45ac7a67b561b63ac, type: 3}
   EffectIcons:
   - {fileID: 5493415550823241926}
   - {fileID: 3286124527949078624}

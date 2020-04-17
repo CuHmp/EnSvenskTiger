@@ -35,19 +35,19 @@ MonoBehaviour:
     - changeValue: 1
       resource: 2
     - changeValue: 1
-      resource: 2
+      resource: 8
   - flavorText:
       text:
       - Test
       - Example
       - "\u05D9\u05D4\u05D9\u05D4 \u05D1\u05E1\u05D3\u05E8"
     effect:
+    - changeValue: 2
+      resource: 7
+    - changeValue: 1
+      resource: 4
     - changeValue: -1
-      resource: 1
-    - changeValue: -1
-      resource: 1
-    - changeValue: -1
-      resource: 1
+      resource: 9
   Effects:
   - changeValue: 1
     resource: 0
