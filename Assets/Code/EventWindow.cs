@@ -16,17 +16,21 @@ public class EventWindow : MonoBehaviour
     Sprite[] ResourceIcons = new Sprite[(int)Resource.Count];
 
     [SerializeField]
-    Image[] EffectIcons = new Image[3];
+    Image[] EffectIcons = new Image[3], EffectIconsOp1 = new Image[3], EffectIconsOp2 = new Image[3];
+
 
     List<Effect>[] OpEffects = new List<Effect>[2];
     List<Effect> ConstEffects;
 
+    public GameEvent tester;
+
     void Awake()
     {
-        foreach (Image effect in EffectIcons)
-        {
-            gameObject.SetActive(false);
-        }
+
+
+        LaunchEvent(tester);
+
+
     }
 
     public void LaunchEvent(GameEvent e)
@@ -34,6 +38,7 @@ public class EventWindow : MonoBehaviour
         Title.text = e.GetTitle();
         Description.text = e.GetFlavorText();
         ConstEffects = e.GetEffects();
+        DisplayEffects(ConstEffects, EffectIcons);
         EventChoice[] EventOptions = e.GetOptions();
         foreach (GameObject go in Options)
         {
@@ -44,6 +49,14 @@ public class EventWindow : MonoBehaviour
             Options[i].SetActive(true);
             Options[i].GetComponentInChildren<Text>().text = EventOptions[i].GetFlavorText();
             OpEffects[i] = EventOptions[i].GetEffects();
+            if (i == 0) 
+            {
+                DisplayEffects(OpEffects[i], EffectIconsOp1); 
+            }
+            else if (i == 1)
+            {
+                DisplayEffects(OpEffects[i], EffectIconsOp2);
+            }
         }
 
     }
@@ -69,11 +82,21 @@ public class EventWindow : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    void DesplayEffects(List<Effect> Effects)
+    void DisplayEffects(List<Effect> Effects, Image[] TargetImages)
     {
-        for (int i = 0; i < Effects.Count && i < EffectIcons.Length; i++)
+        foreach (Image icon in TargetImages)
         {
-            EffectIcons[i].sprite = ResourceIcons[Effects[i].GetResourceInt()];
+            icon.gameObject.SetActive(false);
+        }
+        for (int i = 0; i < Effects.Count && i < TargetImages.Length; i++)
+        {
+            TargetImages[i].gameObject.SetActive(true);
+            int index = Effects[i].GetResourceInt();
+            TargetImages[i].gameObject.SetActive(true);
+            TargetImages[i].GetComponentInChildren<Text>().text = Effects[i].GetValue().ToString("+#;-#;0");
+            TargetImages[i].sprite = ResourceIcons[index];
+
         }
     }
 }
+ 

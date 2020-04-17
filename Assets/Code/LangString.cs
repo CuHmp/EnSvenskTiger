@@ -17,8 +17,10 @@ public class LangString
     [LabeledArray(typeof(Language))]
     string[] text = new string[(int)Language.Count];
 
-    Language[] rightToLeft = { Language.Hebrew };
+    static bool[] rightToLeft = new bool[(int)Language.Count] { false, false, true };
     
+   
+
     public string GetText()
     {
         if (!IsRightToLeft())
@@ -33,14 +35,7 @@ public class LangString
 
     bool IsRightToLeft()
     {
-        foreach (Language lang in rightToLeft)
-        {
-            if (lang == GameSettings.GetLang())
-            {
-                return true;
-            }
-        }
-        return false;
+        return rightToLeft[GameSettings.GetLangInt()];
     }
 
     string ReverseString(string text)
@@ -52,6 +47,5 @@ public class LangString
         }
 
         return newString;
-        // NOTE: NEEDS TESTING
     }
 }
