@@ -10,6 +10,8 @@ public class EventManager : MonoBehaviour
 
     List<TimelineEvent> TimelineEvents = new List<TimelineEvent>(Resources.LoadAll<TimelineEvent>("Assets/TimelineEvents"));
 
+    List<TimelineEvent> ConditionalTimelineEvents = new List<TimelineEvent>(Resources.LoadAll<TimelineEvent>("Assets/ConditionalTimelineEvents"));
+
     List<RandomEvent> RandomEvents = new List<RandomEvent>(Resources.LoadAll<RandomEvent>("Assets/RandomEvents"));
 
 
@@ -55,7 +57,13 @@ public class EventManager : MonoBehaviour
             if (e.GetDate() == currentDate && !HasHappened(e))
             {
                 AddEventToQueue(e);
-                
+            }
+        }
+
+        foreach (ConditionalTimelineEvent e in ConditionalTimelineEvents) {
+            if (e.GetDate() == currentDate && !HasHappened(e)) {
+                e.ChooseEffects();
+                AddEventToQueue(e);
             }
         }
 

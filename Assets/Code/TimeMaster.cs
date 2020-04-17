@@ -6,6 +6,8 @@ public class TimeMaster : MonoBehaviour {
     [Header("Events")]
     public TimeTicker onTick; // event system
 
+
+
     //date variables
     private static int month = 1;
     private static int day = 1;

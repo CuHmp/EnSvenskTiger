@@ -29,6 +29,10 @@ public class Player : MonoBehaviour
         ClampResources();
     }
 
+    public static int GetResource(Resource type) {
+        return Resources[(int)type];
+    }
+
     public static void AddResources(List<Effect> effects)
     {
         foreach (Effect e in effects)

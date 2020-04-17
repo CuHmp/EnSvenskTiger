@@ -74,7 +74,6 @@ public class ColorManager : MonoBehaviour {
         Transform mapTransform = GameObject.Find("Map").transform;
         foreach (Transform child in mapTransform) {
             countries.Add(child.gameObject);
-            Debug.Log(child.gameObject.name);
         }
 
     }
@@ -108,8 +107,7 @@ public class ColorManager : MonoBehaviour {
 
     private static IEnumerator ChangeColourGradually(int target, int goal, float speed) {
         float tick = 0f;
-        Color start_color = countries[target].GetComponent<SpriteRenderer>().color;
-        Color StartColor = new Color(start_color.r, start_color.g, start_color.b);
+        Color StartColor = countries[target].GetComponent<SpriteRenderer>().color;
         Color end_color = countries[goal].GetComponent<SpriteRenderer>().color;
 
         while (countries[target].GetComponent<SpriteRenderer>().color != end_color) {
