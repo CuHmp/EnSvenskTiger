@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        ClampResources();
+        //ClampResources();
     }
 
     static void ClampResources()

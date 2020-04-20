@@ -8,10 +8,11 @@ public class TimeTester : MonoBehaviour {
         TimeMaster processor = FindObjectOfType<TimeMaster>();
         processor.onTick.AddListener(Tick);
 
+
     }
 
     void Tick() {
-        Debug.Log(TimeMaster.GetTime());
+       // Debug.Log(TimeMaster.GetTime());
     }
 
     // Update is called once per frame

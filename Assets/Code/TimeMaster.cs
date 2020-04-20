@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TimeMaster : MonoBehaviour {
+public class TimeMaster : ManagerManager {
     [Header("Events")]
-    public TimeTicker onTick; // event system
-
-
+    public TimeTicker onTick = new TimeTicker(); // event system
 
     //date variables
     private static int month = 1;
@@ -16,17 +14,24 @@ public class TimeMaster : MonoBehaviour {
     //time tick variables
     private static float wait_timer = 3.5f;
     private static float delta_time = 0;
-    private static int[] speed = { 0, 2, 4, 6, 8 };
+    private static int[] speed = { 1, 2, 4, 6, 8 };
     private static int speed_index = 0;
 
     private static int speedBeforePaused = 1;
 
     private static bool is_game_paused = false;
     private System.DateTime EndDate = new System.DateTime(1945, 5, 9);
-    private void Awake() {
 
+    private void Awake() {
+        Debug.Log("TimeMaster Created");
+        return;
+    }
+
+    public override bool init() {
         TogglePlay(false);
         speedBeforePaused = 1;
+        Debug.Log("TimeMaster Initialized");
+        return true;
     }
 
     void Update() {
@@ -66,6 +71,7 @@ public class TimeMaster : MonoBehaviour {
     private static void ChangeSpeed() {
         if ((Input.GetKeyDown(KeyCode.Plus) || Input.GetKeyDown(KeyCode.Equals))) {
             speed_index++;
+
         }
         if (Input.GetKeyDown(KeyCode.Minus)) {
             speed_index--;
@@ -74,7 +80,10 @@ public class TimeMaster : MonoBehaviour {
             is_game_paused = !is_game_paused;
             TogglePlay(is_game_paused);
         }
-        Mathf.Clamp(speed_index, 0, 4);
+
+
+        speed_index = Mathf.Clamp(speed_index, 0, speed.Length - 1);
+        //Debug.Log(speed.Length - 1);
     }
 
     [System.Serializable]
