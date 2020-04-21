@@ -37,6 +37,12 @@ public class EventManager : MonoBehaviour
         }
     }
 
+
+    public void RemoveEventFromQueue(GameEvent e)
+    {
+        EventQueue.Remove(e);
+    }
+
     void ExecuteEvent(GameEvent e)
     {
         eventWindow.gameObject.SetActive(true);

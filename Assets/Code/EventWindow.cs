@@ -18,23 +18,27 @@ public class EventWindow : MonoBehaviour
     [SerializeField]
     Image[] EffectIcons = new Image[3], EffectIconsOp1 = new Image[3], EffectIconsOp2 = new Image[3];
 
+    GameEvent Event;
+    EventManager em;
 
     List<Effect>[] OpEffects = new List<Effect>[2];
     List<Effect> ConstEffects;
+
 
     public GameEvent tester;
 
     void Awake()
     {
+        em = FindObjectOfType<EventManager>();
 
 
-        LaunchEvent(tester);
 
 
     }
 
     public void LaunchEvent(GameEvent e)
     {
+        Event = e;
         Title.text = e.GetTitle();
         Description.text = e.GetFlavorText();
         ConstEffects = e.GetEffects();
@@ -72,6 +76,7 @@ public class EventWindow : MonoBehaviour
     {
         OpEffects = new List<Effect>[2];
         ConstEffects = new List<Effect>();
+        em.RemoveEventFromQueue(Event);
         TimeMaster.TogglePlay(true);
     }
 
