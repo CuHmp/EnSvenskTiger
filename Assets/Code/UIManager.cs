@@ -10,6 +10,9 @@ public class UIManager : MonoBehaviour
 
     [SerializeField]
     Slider Popularity;
+
+    [SerializeField]
+    ResourceCounter Food, Iron, Money;
     void Start()
     {
         UpdateStats();
@@ -30,6 +33,8 @@ public class UIManager : MonoBehaviour
 
         Popularity.value = Player.GetResource(Resource.Popularity);
 
-        // TODO: Iron, money and food
+        Food.SetValue(Player.GetResource(Resource.Food));
+        Iron.SetValue(Player.GetResource(Resource.Iron));
+        Money.SetValue(Player.GetResource(Resource.Money));
     }
 }

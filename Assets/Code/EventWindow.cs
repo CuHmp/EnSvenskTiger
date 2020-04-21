@@ -18,6 +18,7 @@ public class EventWindow : MonoBehaviour
     [SerializeField]
     Image[] EffectIcons = new Image[3], EffectIconsOp1 = new Image[3], EffectIconsOp2 = new Image[3];
 
+
     GameEvent Event;
     EventManager em;
 
