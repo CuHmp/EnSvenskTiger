@@ -22,11 +22,14 @@ public class EventManager : MonoBehaviour
     EventWindow eventWindow;
     int[] RandomEventDates = { 1, 4, 7, 10 };
 
+    UIManager UI;
+
     void Awake()
     {
         tm = FindObjectOfType<TimeMaster>();
         tm.onTick.AddListener(EventChecker);
         eventWindow.gameObject.SetActive(false);
+        UI = FindObjectOfType<UIManager>();
     }
 
     void Update()
@@ -41,6 +44,7 @@ public class EventManager : MonoBehaviour
     public void RemoveEventFromQueue(GameEvent e)
     {
         EventQueue.Remove(e);
+        UI.UpdateStats();
     }
 
     void ExecuteEvent(GameEvent e)
