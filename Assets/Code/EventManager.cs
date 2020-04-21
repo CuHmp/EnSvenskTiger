@@ -31,7 +31,7 @@ public class EventManager : MonoBehaviour
 
     void Update()
     {
-        if (EventQueue.Count != 0)
+        if (EventQueue.Count != 0 && !eventWindow.gameObject.activeSelf)
         {
             ExecuteEvent(EventQueue[0]);
         }
