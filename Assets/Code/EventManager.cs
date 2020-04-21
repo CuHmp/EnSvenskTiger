@@ -4,19 +4,19 @@ using UnityEngine;
 using System;
 
 
-public class EventManager : MonoBehaviour
+public class EventManager : ManagerManager
 {
-    TimeMaster tm;
+    //TimeMaster tm;
 
-    List<TimelineEvent> TimelineEvents = new List<TimelineEvent>(Resources.LoadAll<TimelineEvent>("Assets/TimelineEvents"));
+    List<TimelineEvent> TimelineEvents;
 
-    List<TimelineEvent> ConditionalTimelineEvents = new List<TimelineEvent>(Resources.LoadAll<TimelineEvent>("Assets/ConditionalTimelineEvents"));
+    List<ConditionalTimelineEvent> ConditionalTimelineEvents;
 
-    List<RandomEvent> RandomEvents = new List<RandomEvent>(Resources.LoadAll<RandomEvent>("Assets/RandomEvents"));
+    List<RandomEvent> RandomEvents;
 
 
-    List<GameEvent> PastEvents;
-    List<GameEvent> EventQueue;
+    List<GameEvent> PastEvents = new List<GameEvent>();
+    List<GameEvent> EventQueue = new List<GameEvent>();
 
     [SerializeField]
     EventWindow eventWindow;
@@ -26,10 +26,26 @@ public class EventManager : MonoBehaviour
 
     void Awake()
     {
-        tm = FindObjectOfType<TimeMaster>();
-        tm.onTick.AddListener(EventChecker);
+        eventWindow = GameObject.Find("EventWindow").GetComponent<EventWindow>();
+
         eventWindow.gameObject.SetActive(false);
         UI = FindObjectOfType<UIManager>();
+
+        Debug.Log("EventManager Created");
+    }
+
+    public override bool init() {
+
+        TimelineEvents = new List<TimelineEvent>(Resources.LoadAll<TimelineEvent>("TimelineEvents"));
+        ConditionalTimelineEvents = new List<ConditionalTimelineEvent>(Resources.LoadAll<ConditionalTimelineEvent>("ConditionalTimelineEvents"));
+        RandomEvents = new List<RandomEvent>(Resources.LoadAll<RandomEvent>("RandomEvents"));
+
+        TimeMaster time_master = FindObjectOfType<TimeMaster>();
+        time_master.onTick.AddListener(EventChecker);
+
+        Debug.Log("EventManager Initialized");
+
+        return true;
     }
 
     void Update()
@@ -39,7 +55,6 @@ public class EventManager : MonoBehaviour
             ExecuteEvent(EventQueue[0]);
         }
     }
-
 
     public void RemoveEventFromQueue(GameEvent e)
     {
@@ -53,9 +68,6 @@ public class EventManager : MonoBehaviour
         eventWindow.LaunchEvent(e);
         AddToPastEvents(e);
     }
-
-
-
 
 
     void EventChecker()

@@ -12,7 +12,7 @@ public class TimeTester : MonoBehaviour {
     }
 
     void Tick() {
-       // Debug.Log(TimeMaster.GetTime());
+       Debug.Log(TimeMaster.GetTime());
     }
 
     // Update is called once per frame

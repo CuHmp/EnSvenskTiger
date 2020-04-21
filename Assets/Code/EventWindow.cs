@@ -28,14 +28,6 @@ public class EventWindow : MonoBehaviour
 
     public GameEvent tester;
 
-    void Awake()
-    {
-        em = FindObjectOfType<EventManager>();
-
-
-
-
-    }
 
     public void LaunchEvent(GameEvent e)
     {
@@ -75,6 +67,7 @@ public class EventWindow : MonoBehaviour
 
     private void OnDisable()
     {
+        em = FindObjectOfType<EventManager>();
         OpEffects = new List<Effect>[2];
         ConstEffects = new List<Effect>();
         em.RemoveEventFromQueue(Event);

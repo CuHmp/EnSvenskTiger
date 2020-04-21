@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameSettings : ScriptableObject
 {
-    static Language lang = Language.Hebrew;
+    static Language lang = Language.English;
 
     public static void SetLang(Language newLang)
     {

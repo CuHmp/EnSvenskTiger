@@ -10,6 +10,8 @@ public class ColorManager : ManagerManager {
     private static List<GameObject> countries = null;
 
     private void Awake() {
+        instance = this;
+
         Debug.Log("ColorManager Created");
         return;
     }

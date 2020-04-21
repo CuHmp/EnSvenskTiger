@@ -11,16 +11,14 @@ public class ManagerManager : MonoBehaviour {
 
     void createManagers() {
         AddManagers();
-        for(int i = 0; i < 100000; i++) {
-
-        }
         initManagers();
     }
 
     private void AddManagers() {
         managers.Add(gameObject.AddComponent<TimeMaster>());
-        managers.Add(gameObject.AddComponent<ResorceManager>());
+        managers.Add(gameObject.AddComponent<ResourceManager>());
         managers.Add(gameObject.AddComponent<ColorManager>());
+        managers.Add(gameObject.AddComponent<EventManager>());
     }
 
     private void initManagers() {

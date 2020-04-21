@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class TimeMaster : ManagerManager {
     [Header("Events")]
     public TimeTicker onTick = new TimeTicker(); // event system
-
+    //TimeMaster
     //date variables
     private static int month = 1;
     private static int day = 1;
@@ -14,13 +14,13 @@ public class TimeMaster : ManagerManager {
     //time tick variables
     private static float wait_timer = 3.5f;
     private static float delta_time = 0;
-    private static int[] speed = { 1, 2, 4, 6, 8 };
+    private static int[] speed = { 0, 2, 4, 6, 8, 12, 16 };
     private static int speed_index = 0;
 
     private static int speedBeforePaused = 1;
 
     private static bool is_game_paused = false;
-    private System.DateTime EndDate = new System.DateTime(1945, 5, 9);
+    private System.DateTime EndDate = new System.DateTime(1945, 9, 2);
 
     private void Awake() {
         Debug.Log("TimeMaster Created");
@@ -77,13 +77,15 @@ public class TimeMaster : ManagerManager {
             speed_index--;
         }
         if (Input.GetKeyDown(KeyCode.Space)) {
-            is_game_paused = !is_game_paused;
-            TogglePlay(is_game_paused);
+            if (speed_index == 0) {
+                TogglePlay(true);
+            }
+            else {
+                TogglePlay(false);
+            }
         }
 
-
         speed_index = Mathf.Clamp(speed_index, 0, speed.Length - 1);
-        //Debug.Log(speed.Length - 1);
     }
 
     [System.Serializable]
