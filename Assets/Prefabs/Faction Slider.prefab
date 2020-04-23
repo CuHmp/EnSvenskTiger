@@ -264,6 +264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3611788263929862737}
   - component: {fileID: 7348585864195385013}
+  - component: {fileID: 1809557065763434624}
   m_Layer: 5
   m_Name: Opinion Slider
   m_TagString: Untagged
@@ -343,6 +344,20 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1809557065763434624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2990097349201027547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14395d4d9f572f24abd0b255176bccd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  face: {fileID: 2997079618204834632}
+  slider: {fileID: 7348585864195385013}
 --- !u!1 &3748523563104750628
 GameObject:
   m_ObjectHideFlags: 0
