@@ -32,6 +32,13 @@ public class Player : MonoBehaviour
     public static int GetResource(Resource type) {
         return Resources[(int)type];
     }
+    public static int GetResource(int type) {
+        return Resources[type];
+    }
+
+    public static void AddResource(Resource type, int value) {
+        Resources[(int)type] += value;
+    }
 
     public static void AddResources(List<Effect> effects)
     {
@@ -46,11 +53,11 @@ public class Player : MonoBehaviour
         //ClampResources();
     }
 
-    static void ClampResources()
+    public static void ClampResources()
     {
-        foreach (int i in Resources)
+        for (int i = 0; i < (int)Resource.Count; i++)
         {
-            Mathf.Clamp(i, 0, 10);
+            Resources[i] = Mathf.Clamp(Resources[i], 0, 10);
         }
     }
 }

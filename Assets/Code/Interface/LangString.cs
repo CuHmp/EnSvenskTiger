@@ -18,8 +18,6 @@ public class LangString
     string[] text = new string[(int)Language.Count];
 
     static bool[] rightToLeft = new bool[(int)Language.Count] { false, false, true };
-    
-   
 
     public string GetText()
     {

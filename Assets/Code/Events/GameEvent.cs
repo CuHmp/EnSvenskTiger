@@ -13,13 +13,18 @@ public class GameEvent : ScriptableObject
     [SerializeField]
     EventChoice[] Options = new EventChoice[2];
     [SerializeField]
-    List<Effect> Effects;
+    List<Effect> Effects = new List<Effect>();
     
     public string GetTitle()
     {
         return title.GetText();
     }
-
+    public LangString GetLangStringTitle() {
+        return title;
+    }
+    public LangString GetLangStringFlavorText() {
+        return flavorText;
+    }
     public string GetFlavorText()
     {
         return flavorText.GetText();
@@ -35,8 +40,11 @@ public class GameEvent : ScriptableObject
         return Effects;
     }
     
-    protected void SetEffects(List<Effect> e) {
-        Effects = e;
+    public void setEvent(GameEvent e, List<Effect> effect) {
+        title = e.GetLangStringTitle();
+        flavorText = e.GetLangStringFlavorText();
+        Options = e.GetOptions();
+        Effects = effect;
     }
 
 }
@@ -97,15 +105,15 @@ public class ConditionalTimelineEvent : TimelineEvent {
     List<Effect> alternative_effects = new List<Effect>();
 
 
-    public void ChooseEffects() {
+    public List<Effect> ChooseEffects() {
         bool condition_is_met = false;
         foreach(TimelineCondition tc in effect_conditions) {
             condition_is_met = tc.IsMet();
             if (!condition_is_met) {
-                SetEffects(alternative_effects);
+                return alternative_effects;
             }
         }
-        SetEffects(GetEffects());
+        return GetEffects();
     }
    
     [System.Serializable]
@@ -185,5 +193,3 @@ public enum Resource
     Popularity,
     Count
 }
-
-

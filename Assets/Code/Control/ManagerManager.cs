@@ -3,33 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ManagerManager : MonoBehaviour {
-    static List<ManagerManager> managers = new List<ManagerManager>();
-    static bool init_managers = false;
+    static List<ManagerManager> managers_ = new List<ManagerManager>();
+
     private void Awake() {
-        createManagers();
+        CreateManagers();
     }
 
-    void createManagers() {
+    void CreateManagers() {
         AddManagers();
-        initManagers();
+        InitManagers();
     }
 
     private void AddManagers() {
-        managers.Add(gameObject.AddComponent<TimeMaster>());
-        managers.Add(gameObject.AddComponent<ResourceManager>());
-        managers.Add(gameObject.AddComponent<ColorManager>());
-        managers.Add(gameObject.AddComponent<EventManager>());
+        managers_.Add(gameObject.AddComponent<TimeMaster>());
+        managers_.Add(gameObject.AddComponent<ResourceManager>());
+        managers_.Add(gameObject.AddComponent<ColorManager>());
+        managers_.Add(gameObject.AddComponent<EventManager>());
     }
 
-    private void initManagers() {
-        for (int i = 0; i < managers.Count; i++) {
-            if (!managers[i].init()) {
-                Debug.LogError("Failed to initilize a manager", managers[i]);
+    private void InitManagers() {
+        for (int i = 0; i < managers_.Count; i++) {
+            if (!managers_[i].Init()) {
+                Debug.LogError("Failed to initilize a manager", managers_[i]);
             }
         }
     }
 
 
-    public virtual bool init() { return false; }
+    public virtual bool Init() { return false; }
 
 }

@@ -2502,7 +2502,7 @@ GameObject:
   - component: {fileID: 3330345929303564792}
   - component: {fileID: 8160839185213414140}
   m_Layer: 0
-  m_Name: LooseScreen
+  m_Name: GAMEOVER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2561,7 +2561,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a52bb416c904b64489dc80a95bea611f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3f6273fb50a0901448d4e38fedf4f1da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0

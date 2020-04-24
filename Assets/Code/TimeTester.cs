@@ -5,10 +5,7 @@ using UnityEngine;
 public class TimeTester : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
-        TimeMaster processor = FindObjectOfType<TimeMaster>();
-        processor.onTick.AddListener(Tick);
-
-
+        TimeMaster.onTick.AddListener(Tick);
     }
 
     void Tick() {

@@ -22,26 +22,26 @@ public class EventManager : ManagerManager
     EventWindow eventWindow;
     int[] RandomEventDates = { 1, 4, 7, 10 };
 
-    UIManager UI;
+    public UIManager UI;
 
     void Awake()
     {
         eventWindow = GameObject.Find("EventWindow").GetComponent<EventWindow>();
 
         eventWindow.gameObject.SetActive(false);
-        UI = FindObjectOfType<UIManager>();
+
 
         Debug.Log("EventManager Created");
     }
 
-    public override bool init() {
+    public override bool Init() {
 
         TimelineEvents = new List<TimelineEvent>(Resources.LoadAll<TimelineEvent>("TimelineEvents"));
         ConditionalTimelineEvents = new List<ConditionalTimelineEvent>(Resources.LoadAll<ConditionalTimelineEvent>("ConditionalTimelineEvents"));
         RandomEvents = new List<RandomEvent>(Resources.LoadAll<RandomEvent>("RandomEvents"));
+        UI = FindObjectOfType<UIManager>();
 
-        TimeMaster time_master = FindObjectOfType<TimeMaster>();
-        time_master.onTick.AddListener(EventChecker);
+        TimeMaster.onTick.AddListener(EventChecker);
 
         Debug.Log("EventManager Initialized");
 
@@ -59,6 +59,7 @@ public class EventManager : ManagerManager
     public void RemoveEventFromQueue(GameEvent e)
     {
         EventQueue.Remove(e);
+        UI = FindObjectOfType<UIManager>();
         UI.UpdateStats();
     }
 
@@ -84,8 +85,9 @@ public class EventManager : ManagerManager
 
         foreach (ConditionalTimelineEvent e in ConditionalTimelineEvents) {
             if (e.GetDate() == currentDate && !HasHappened(e)) {
-                e.ChooseEffects();
-                AddEventToQueue(e);
+                GameEvent ge = ScriptableObject.CreateInstance<GameEvent>();
+                ge.setEvent(e, e.ChooseEffects());
+                AddEventToQueue(ge);
             }
         }
 
