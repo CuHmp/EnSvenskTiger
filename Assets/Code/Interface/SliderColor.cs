@@ -10,9 +10,27 @@ public class SliderColor : MonoBehaviour
     [SerializeField]
     Slider slider;
 
-    Color green = Color.green, red = Color.red;
+    Color green = Color.green, red = Color.red, yellow = Color.yellow;
     void FixedUpdate()
     {
-        face.color = Color.Lerp(red, green, slider.normalizedValue);
+
+        Color temp = Color.black;
+
+        temp.g = Mathf.Lerp(0.0f, 1.0f, slider.normalizedValue * 2);
+        temp.r = Mathf.Lerp(1.0f, 0.0f, (slider.normalizedValue - 0.5f) * 2);
+
+        face.color = temp;
+
+        //if (slider.normalizedValue > 0.55f) 
+        //{
+        //    face.color = Color.Lerp(yellow, green, (slider.normalizedValue - 0.5f) * 2); 
+        //}
+        //else
+        //{
+        //    face.color = Color.Lerp(red, yellow, slider.normalizedValue * 2);
+        //}
+
+        print(face.color);
+
     }
 }
