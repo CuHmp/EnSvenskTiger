@@ -32,7 +32,7 @@ public class EventChoice
         {
             return effect[index];
         }
-        return new Effect();
+        return null;
     }
 
     public int GetEffectsCount()
