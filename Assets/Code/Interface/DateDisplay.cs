@@ -9,11 +9,13 @@ public class DateDisplay : MonoBehaviour
     Text text;
 
     [SerializeField]
-    Button butt;
+    Button playPause, speedUp, speedDown;
     void Start()
     {
         TimeMaster.onTick.AddListener(DateTick);
-        butt.onClick.AddListener(TogglePause);
+        playPause.onClick.AddListener(TogglePause);
+        speedUp.onClick.AddListener(IncreaseSpeed);
+        speedDown.onClick.AddListener(DecreaseSpeed);
         TimeMaster.onPause.AddListener(SetButtonImage);
         SetButtonImage();
         
@@ -33,7 +35,7 @@ public class DateDisplay : MonoBehaviour
 
     void SetButtonImage()
     {
-        Text temp = butt.gameObject.GetComponentInChildren<Text>();
+        Text temp = playPause.gameObject.GetComponentInChildren<Text>();
         if (TimeMaster.IsPaused())
         {
             temp.text = ">";
@@ -44,5 +46,13 @@ public class DateDisplay : MonoBehaviour
         }
     }
 
+    void IncreaseSpeed()
+    {
+        TimeMaster.IncreaseSpeed();
+    }
 
+    void DecreaseSpeed()
+    {
+        TimeMaster.DecreaseSpeed();
+    }
 }
