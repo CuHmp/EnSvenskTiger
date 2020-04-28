@@ -93,6 +93,9 @@ public class TimeMaster : ManagerManager {
 
     }
 
+    public static bool IsPaused() {
+        return speed_index_ == 0;
+    }
 
     public static System.DateTime GetTime() {
         return new System.DateTime(year_, month_, day_);

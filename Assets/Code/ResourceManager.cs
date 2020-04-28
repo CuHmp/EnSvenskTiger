@@ -2,7 +2,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class ResourceManager : ManagerManager {
     private static int current_month_ = 1;
     private static int graze_period_ = 9999;
