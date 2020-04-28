@@ -9,11 +9,11 @@ using System;
 public class GameEvent : ScriptableObject
 {
     [SerializeField]
-    LangString title, flavorText;
+    protected LangString title, flavorText;
     [SerializeField]
-    EventChoice[] Options = new EventChoice[2];
+    protected EventChoice[] Options = new EventChoice[2];
     [SerializeField]
-    List<Effect> Effects = new List<Effect>();
+    protected List<Effect> Effects;
     
     public string GetTitle()
     {
@@ -93,6 +93,39 @@ public class TimelineEvent : GameEvent
     public DateTime GetDate()
     {
         return date;
+    }
+}
+
+public class ResourceEvent : GameEvent
+{
+    [SerializeField]
+    Resource resource;
+
+    Resource[] values = { Resource.Food, Resource.Iron, Resource.Money };
+
+    public void SetEffect(int option)
+    {
+        option = Mathf.Clamp(option, 0, Options.Length - 1);
+
+        Effect effect = new Effect(resource, 1);
+        
+        List<Effect> temp = new List<Effect>();
+        temp.Add(new Effect(resource, 1));
+
+        for (int i = 0, j = 0; i < values.Length && j <= option; i++)
+        {
+            if (values[i] == resource)
+            {
+                continue;
+            }
+            else
+            {
+                effect = new Effect(values[i], 1);
+                j++;
+            }
+        }
+        temp.Add(effect);
+        Options[option].SetEffect(temp);
     }
 }
 

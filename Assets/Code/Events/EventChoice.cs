@@ -11,6 +11,11 @@ public class EventChoice
     [SerializeField]
     List<Effect> effect;
 
+    public void SetEffect(List<Effect> e)
+    {
+        effect = e;
+    }
+
     public string GetFlavorText()
     {
         return flavorText.GetText();
@@ -27,7 +32,7 @@ public class EventChoice
         {
             return effect[index];
         }
-        return new Effect();
+        return null;
     }
 
     public int GetEffectsCount()
@@ -47,6 +52,12 @@ public class Effect
     int changeValue;
     [SerializeField]
     Resource resource;
+
+    public Effect(Resource r, int val)
+    {
+        changeValue = val;
+        resource = r;
+    }
 
     public int GetValue()
     {
