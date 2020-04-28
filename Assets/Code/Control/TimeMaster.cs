@@ -5,6 +5,7 @@ using UnityEngine.Events;
 public class TimeMaster : ManagerManager {
     [Header("Events")]
     public static readonly TimeTicker onTick = new TimeTicker(); // event system
+    public static readonly TimeTicker onPause = new TimeTicker(); // event system
     private static readonly System.DateTime end_date_ = new System.DateTime(1945, 9, 2);
 
 
@@ -66,6 +67,7 @@ public class TimeMaster : ManagerManager {
         else {
             speed_index_ = speed_before_paused_;
         }
+        onPause.Invoke();
     }
 
     private static void ChangeSpeed() {
