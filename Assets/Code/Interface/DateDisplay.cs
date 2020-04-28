@@ -26,14 +26,8 @@ public class DateDisplay : MonoBehaviour
 
     void TogglePause()
     {
-        if (TimeMaster.IsPaused())
-        {
-            TimeMaster.TogglePlay(false);
-        }
-        else
-        {
-            TimeMaster.TogglePlay(true);
-        }
+        TimeMaster.TogglePlay(TimeMaster.IsPaused());
+
 
     }
 
