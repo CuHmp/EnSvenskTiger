@@ -21,16 +21,5 @@ public class SliderColor : MonoBehaviour
 
         face.color = temp;
 
-        //if (slider.normalizedValue > 0.55f) 
-        //{
-        //    face.color = Color.Lerp(yellow, green, (slider.normalizedValue - 0.5f) * 2); 
-        //}
-        //else
-        //{
-        //    face.color = Color.Lerp(red, yellow, slider.normalizedValue * 2);
-        //}
-
-        print(face.color);
-
     }
 }
