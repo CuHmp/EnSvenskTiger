@@ -99,7 +99,7 @@ public class TimeMaster : ManagerManager {
     }
 
     public static bool IsPaused() {
-        return speed_index_ == 0 ? false : true;
+        return speed_index_ == 0 ? true : false;
     }
 
     public static System.DateTime GetTime() {
