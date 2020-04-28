@@ -65,8 +65,12 @@ public class TimeMaster : ManagerManager {
             speed_index_ = 0;
         }
         else {
+            if(speed_before_paused_ == 0) {
+                speed_before_paused_ = 1;
+            }
             speed_index_ = speed_before_paused_;
         }
+        Debug.Log(speed_index_);
         onPause.Invoke();
     }
 
@@ -96,7 +100,7 @@ public class TimeMaster : ManagerManager {
     }
 
     public static bool IsPaused() {
-        return speed_index_ == 0;
+        return speed_index_ == 0 ? false : true;
     }
 
     public static System.DateTime GetTime() {
