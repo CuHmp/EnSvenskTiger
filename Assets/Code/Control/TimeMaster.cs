@@ -70,7 +70,6 @@ public class TimeMaster : ManagerManager {
             }
             speed_index_ = speed_before_paused_;
         }
-        Debug.Log(speed_index_);
         onPause.Invoke();
     }
 
