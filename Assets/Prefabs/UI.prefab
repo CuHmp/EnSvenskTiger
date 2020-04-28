@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.30455607, g: 0.735849, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -256,6 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6357608660104455449}
   - component: {fileID: 8439634515643670261}
+  - component: {fileID: 9142823703317861128}
   m_Layer: 5
   m_Name: Popularity
   m_TagString: Untagged
@@ -335,6 +336,20 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &9142823703317861128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442587919558474412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14395d4d9f572f24abd0b255176bccd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  face: {fileID: 7031821514550941373}
+  slider: {fileID: 8439634515643670261}
 --- !u!1 &4965668655482084703
 GameObject:
   m_ObjectHideFlags: 0
