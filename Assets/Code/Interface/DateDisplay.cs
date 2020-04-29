@@ -17,6 +17,7 @@ public class DateDisplay : MonoBehaviour
         speedUp.onClick.AddListener(IncreaseSpeed);
         speedDown.onClick.AddListener(DecreaseSpeed);
         TimeMaster.onPause.AddListener(SetButtonImage);
+        DateTick();
         SetButtonImage();
         
     }

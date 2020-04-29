@@ -16,7 +16,7 @@ public class EventManager : ManagerManager
 
 
     List<GameEvent> PastEvents = new List<GameEvent>();
-    List<GameEvent> EventQueue = new List<GameEvent>();
+    static List<GameEvent> EventQueue = new List<GameEvent>();
 
     [SerializeField]
     EventWindow eventWindow;
@@ -67,7 +67,10 @@ public class EventManager : ManagerManager
     {
         eventWindow.gameObject.SetActive(true);
         eventWindow.LaunchEvent(e);
-        AddToPastEvents(e);
+        if (e.GetType() != typeof(ResourceEvent))
+        {
+            AddToPastEvents(e);
+        }
     }
 
 
@@ -130,9 +133,14 @@ public class EventManager : ManagerManager
         PastEvents.Add(e);
     }
 
-    void AddEventToQueue(GameEvent e)
+    static void AddEventToQueue(GameEvent e)
     {
         EventQueue.Add(e);
+    }
+
+    public static void CreateResourceEvent(ResourceEvent re)
+    {
+        AddEventToQueue(re);
     }
 
 }
