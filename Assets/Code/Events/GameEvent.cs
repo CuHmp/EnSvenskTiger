@@ -115,8 +115,8 @@ public class ConditionalTimelineEvent : TimelineEvent {
 
     public List<Effect> ChooseEffects() {
         bool condition_is_met = false;
-        foreach(TimelineCondition tc in effect_conditions) {
-            condition_is_met = tc.IsMet();
+        foreach(TimelineCondition condition in effect_conditions) {
+            condition_is_met = condition.IsMet();
             if (!condition_is_met) {
                 return alternative_effects;
             }
