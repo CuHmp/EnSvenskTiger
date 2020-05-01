@@ -90,6 +90,10 @@ public class TimeMaster : ManagerManager {
             }
         }
 
+        ClampSpeedIndex();
+    }
+
+    private static void ClampSpeedIndex() {
         speed_index_ = Mathf.Clamp(speed_index_, 0, speed_.Length - 1);
     }
 
@@ -100,12 +104,12 @@ public class TimeMaster : ManagerManager {
 
     public static void IncreaseSpeed() {
         speed_index_++;
-        speed_index_ = Mathf.Clamp(speed_index_, 0, speed_.Length - 1);
+        ClampSpeedIndex();
     }
 
     public static void DecreaseSpeed() {
         speed_index_--;
-        speed_index_ = Mathf.Clamp(speed_index_, 0, speed_.Length - 1);
+        ClampSpeedIndex();
     }
 
     public static bool IsPaused() {
