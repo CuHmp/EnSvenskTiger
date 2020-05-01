@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: The War Begins
+  m_EditorClassIdentifier: Assembly-CSharp::TimelineEvent
+  title:
+    text:
+    - The War Begins
+    - "Kriget b\xF6rjar"
+    - "\u05D4\u05DE\u05DC\u05D7\u05DE\u05D4 \u05DE\u05EA\u05D7\u05D9\u05DC\u05D4"
+  flavorText:
+    text:
+    - In 1st september 1939, Nazi Germany invaded Poland, plunging europe and later
+      the world into the second world war.   You, Sweden, have decided to remain
+      neutral in the conflict. In order to maintain neutrality, however, you may
+      need to make difficult choices in order to make sure neither the Allies, Axis
+      or Soviets (Represented respectively by the flags above) dislike or like you
+      too much. Should a faction like you too much, it will start to tax one of your
+      resources once every 3 months. Running out of a resource will cause you to
+      fail. A faction disliking you may lead to war, and you will have 6 months to
+      restore the fractured relations or else lose the game.  In addition, you are
+      a democratic country, and will need to face elections every four years. You
+      must also make sure your popular support (on the left side of the screen) does
+      not reach 0, as you will lose the game. It is now on you to lead Sweden through
+      the war.
+    - 
+    - 
+  Options:
+  - flavorText:
+      text:
+      - Start Game
+      - 
+      - 
+    effect: []
+  Effects: []
+  date:
+    _dateTime: 9/1/1939 12:00:00 AM

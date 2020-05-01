@@ -1492,7 +1492,7 @@ PrefabInstance:
     - target: {fileID: 8803503321638625349, guid: 7073ac3fbcf3faf42b3a950df6adabaf,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 300
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8803503321638625349, guid: 7073ac3fbcf3faf42b3a950df6adabaf,
         type: 3}
@@ -1533,6 +1533,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EventWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 8803503321638625350, guid: 7073ac3fbcf3faf42b3a950df6adabaf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7073ac3fbcf3faf42b3a950df6adabaf, type: 3}

@@ -10,8 +10,8 @@ public class TimeMaster : ManagerManager {
 
 
     //date variables
-    private static int month_ = 1;
-    private static int day_ = 1;
+    private static int month_ = 8;
+    private static int day_ = 31;
     private static int year_ = 1939;
 
     //time tick variables

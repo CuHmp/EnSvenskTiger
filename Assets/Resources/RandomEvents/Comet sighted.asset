@@ -10,35 +10,38 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: Food
-  m_EditorClassIdentifier: Assembly-CSharp::ResourceEvent
+  m_Name: Comet sighted
+  m_EditorClassIdentifier: Assembly-CSharp::RandomEvent
   title:
     text:
-    - Trade for food?
+    - Comet sighted
     - 
     - 
   flavorText:
     text:
-    - 
+    - A comet has been sighted
     - 
     - 
   Options:
   - flavorText:
       text:
-      - 
+      - It is an omen
       - 
       - 
     effect:
     - changeValue: -1
-      resource: 7
+      resource: 9
   - flavorText:
       text:
-      - 
+      - Why should this affect us?
       - 
       - 
     effect:
     - changeValue: -1
-      resource: 8
-  Effects:
-  - changeValue: 1
-    resource: 6
+      resource: 9
+  Effects: []
+  condition:
+    minDate:
+      _dateTime: 9/25/1066 12:00:00 AM
+    maxDate:
+      _dateTime: 5/1/2020 12:00:00 AM

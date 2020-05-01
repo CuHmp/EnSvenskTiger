@@ -2,13 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Language
-{
-    English,
-    Swedish,
-    Hebrew,
-    Count
-}
+
 
 [System.Serializable]
 public class LangString 
@@ -16,6 +10,8 @@ public class LangString
     [SerializeField]
     [LabeledArray(typeof(Language))]
     string[] text = new string[(int)Language.Count];
+
+    
 
     static bool[] rightToLeft = new bool[(int)Language.Count] { false, false, true };
 
@@ -29,6 +25,16 @@ public class LangString
         {
             return ReverseString(text[GameSettings.GetLangInt()]);
         }
+    }
+
+    public string GetText(Language lang)
+    {
+        return text[(int)lang];
+    }
+
+    public void SetText(string s, Language lang)
+    {
+        text[(int)lang] = s;
     }
 
     bool IsRightToLeft()
@@ -46,4 +52,6 @@ public class LangString
 
         return newString;
     }
+
+
 }

@@ -56,10 +56,15 @@ public class RandomEvent : GameEvent
     [SerializeField]
     Condition condition;
 
+
     public Condition GetCondition()
     {
         return condition;
     }
+
+
+
+  
 
     [System.Serializable]
     public class Condition
