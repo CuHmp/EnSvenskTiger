@@ -36,7 +36,7 @@ MonoBehaviour:
     resource: 1
   - changeValue: 5
     resource: 2
-  - changeValue: 5
+  - changeValue: 3
     resource: 3
   - changeValue: 5
     resource: 4
