@@ -14,27 +14,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TimelineEvent
   title:
     text:
-    - 
+    - The fate of Denmark's Kews
     - 
     - 
   flavorText:
     text:
-    - 
+    - Denmark has been tasked by the German reich to remove all jews from its territory.
+      While the intended goal is for them to transfer their jews to Germany, the
+      Danes intend to follow their orders to the letter and request Sweden to take
+      in the Danish Jews instead to keep them safe.
     - 
     - 
   Options:
   - flavorText:
       text:
+      - Agree
       - 
       - 
-      - 
-    effect: []
+    effect:
+    - changeValue: 1
+      resource: 9
+    - changeValue: 1
+      resource: 0
   - flavorText:
       text:
+      - Disagree
       - 
       - 
-      - 
-    effect: []
+    effect:
+    - changeValue: 1
+      resource: 2
   Effects: []
   date:
-    _dateTime: 1/1/0001 12:00:00 AM
+    _dateTime: 10/1/1043 12:00:00 AM

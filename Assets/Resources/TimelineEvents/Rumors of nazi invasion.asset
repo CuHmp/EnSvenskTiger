@@ -10,31 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: New TimelineEvent
+  m_Name: Rumors of nazi invasion
   m_EditorClassIdentifier: Assembly-CSharp::TimelineEvent
   title:
     text:
-    - 
+    - Rumors of nazi invasion
     - 
     - 
   flavorText:
     text:
-    - 
+    - Rumors are circulating that the germans may be planning an attack against us.
     - 
     - 
   Options:
   - flavorText:
       text:
-      - 
-      - 
-      - 
-    effect: []
-  - flavorText:
-      text:
-      - 
+      - Worrying
       - 
       - 
     effect: []
-  Effects: []
+  Effects:
+  - changeValue: -1
+    resource: 9
+  - changeValue: -1
+    resource: 2
   date:
-    _dateTime: 1/1/0001 12:00:00 AM
+    _dateTime: 2/1/1942 12:00:00 AM

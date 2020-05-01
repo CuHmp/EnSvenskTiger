@@ -10,31 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: German invasion of Scandinavia
+  m_Name: German invasion of Denmark
   m_EditorClassIdentifier: Assembly-CSharp::TimelineEvent
   title:
     text:
-    - 
+    - German occupation of Denmark
     - 
     - 
   flavorText:
     text:
-    - 
+    - On April 9th 1940, Germany occupied Denmark, our fellow scandinavian country.
+      The germans are already invading Norway.
     - 
     - 
   Options:
   - flavorText:
       text:
-      - 
-      - 
-      - 
-    effect: []
-  - flavorText:
-      text:
-      - 
+      - Let's hope the nazis don't continue down this path
       - 
       - 
     effect: []
-  Effects: []
+  Effects:
+  - changeValue: 1
+    resource: 3
   date:
-    _dateTime: 1/1/0001 12:00:00 AM
+    _dateTime: 4/9/1940 12:00:00 AM

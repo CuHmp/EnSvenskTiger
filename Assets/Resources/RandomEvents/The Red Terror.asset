@@ -10,40 +10,40 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: The Swedish Connection
-  m_EditorClassIdentifier: Assembly-CSharp::TimelineEvent
+  m_Name: The Red Terror
+  m_EditorClassIdentifier: Assembly-CSharp::RandomEvent
   title:
     text:
-    - The Swedish Connection
+    - The Red Terror
     - 
     - 
   flavorText:
     text:
-    - Germany requests to transfer supplies and armaments through Sweden and into
-      Norway.
+    - People fear an impending soviet invasion. Perhaps we could negotiate instead.
     - 
     - 
   Options:
   - flavorText:
       text:
-      - Allow
+      - Negotiate with the soviets.
       - 
       - 
     effect:
-    - changeValue: 2
-      resource: 2
     - changeValue: -1
-      resource: 9
+      resource: 0
+    - changeValue: 1
+      resource: 4
   - flavorText:
       text:
-      - Deny
+      - There's no need to placate them.
       - 
       - 
     effect:
-    - changeValue: 1
-      resource: 9
-    - changeValue: -2
-      resource: 2
+    - changeValue: -1
+      resource: 5
   Effects: []
-  date:
-    _dateTime: 4/15/1940 12:00:00 AM
+  condition:
+    minDate:
+      _dateTime: 9/25/1066 12:00:00 AM
+    maxDate:
+      _dateTime: 5/1/2020 12:00:00 AM

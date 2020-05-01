@@ -32,7 +32,11 @@ public class EventWindow : MonoBehaviour
     public void LaunchEvent(GameEvent e)
     {
         Event = e;
-        Title.text = e.GetTitle();
+        if (e.GetType() == typeof(RandomEvent))
+        {
+            Title.text = "[Random Event]";
+        }
+        Title.text = Title.text + e.GetTitle();
         Description.text = e.GetFlavorText();
         ConstEffects = e.GetEffects();
         DisplayEffects(ConstEffects, EffectIcons);

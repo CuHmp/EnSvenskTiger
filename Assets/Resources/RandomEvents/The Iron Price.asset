@@ -10,40 +10,42 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: The Swedish Connection
-  m_EditorClassIdentifier: Assembly-CSharp::TimelineEvent
+  m_Name: The Iron Price
+  m_EditorClassIdentifier: Assembly-CSharp::RandomEvent
   title:
     text:
-    - The Swedish Connection
+    - The Iron Price
     - 
     - 
   flavorText:
     text:
-    - Germany requests to transfer supplies and armaments through Sweden and into
-      Norway.
+    - The United Kingdom would like to buy iron from us.
     - 
     - 
   Options:
   - flavorText:
       text:
-      - Allow
-      - 
-      - 
-    effect:
-    - changeValue: 2
-      resource: 2
-    - changeValue: -1
-      resource: 9
-  - flavorText:
-      text:
-      - Deny
+      - Agree
       - 
       - 
     effect:
     - changeValue: 1
-      resource: 9
-    - changeValue: -2
-      resource: 2
+      resource: 0
+    - changeValue: 1
+      resource: 8
+    - changeValue: -1
+      resource: 7
+  - flavorText:
+      text:
+      - Disagree
+      - 
+      - 
+    effect:
+    - changeValue: -1
+      resource: 0
   Effects: []
-  date:
-    _dateTime: 4/15/1940 12:00:00 AM
+  condition:
+    minDate:
+      _dateTime: 9/25/1066 12:00:00 AM
+    maxDate:
+      _dateTime: 5/1/2020 12:00:00 AM

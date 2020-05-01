@@ -14,27 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TimelineEvent
   title:
     text:
-    - 
+    - Talvisota
     - 
     - 
   flavorText:
     text:
-    - 
+    - The soviet union has decided to invade Finland with the goal of conquest, starting
+      the winter war.
     - 
     - 
   Options:
   - flavorText:
       text:
-      - 
-      - 
-      - 
-    effect: []
-  - flavorText:
-      text:
-      - 
+      - Stalin should not underestimate the Finns.
       - 
       - 
     effect: []
-  Effects: []
+  Effects:
+  - changeValue: -1
+    resource: 5
   date:
-    _dateTime: 1/1/0001 12:00:00 AM
+    _dateTime: 11/30/1939 12:00:00 AM

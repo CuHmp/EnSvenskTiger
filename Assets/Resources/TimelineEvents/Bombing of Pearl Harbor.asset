@@ -10,31 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: New TimelineEvent
+  m_Name: Bombing of Pearl Harbor
   m_EditorClassIdentifier: Assembly-CSharp::TimelineEvent
   title:
     text:
-    - 
+    - Bombing of Pearl Harbor
     - 
     - 
   flavorText:
     text:
-    - 
+    - In their effort to control the pacific, Japan has bombed the American naval
+      base of Pearl Harbor. In a show of solidarity, Hitler also declared war on
+      the USA, who are now part of the war on the allied side.
     - 
     - 
   Options:
   - flavorText:
       text:
-      - 
-      - 
-      - 
-    effect: []
-  - flavorText:
-      text:
-      - 
+      - An interesting developement.
       - 
       - 
     effect: []
-  Effects: []
+  Effects:
+  - changeValue: 1
+    resource: 1
   date:
-    _dateTime: 1/1/0001 12:00:00 AM
+    _dateTime: 12/7/1941 12:00:00 AM

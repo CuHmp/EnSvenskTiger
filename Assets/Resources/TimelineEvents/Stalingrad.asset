@@ -14,27 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TimelineEvent
   title:
     text:
-    - 
+    - Stalingrad.
     - 
     - 
   flavorText:
     text:
-    - 
+    - The USSR has won the battle of Stalingrad and began pushing back against the
+      nazi tide.
     - 
     - 
   Options:
   - flavorText:
       text:
+      - This may turn the tide of the war
       - 
       - 
-      - 
-    effect: []
-  - flavorText:
-      text:
-      - 
-      - 
-      - 
-    effect: []
+    effect:
+    - changeValue: 2
+      resource: 5
+    - changeValue: -1
+      resource: 3
   Effects: []
   date:
-    _dateTime: 1/1/0001 12:00:00 AM
+    _dateTime: 2/2/1943 12:00:00 AM
