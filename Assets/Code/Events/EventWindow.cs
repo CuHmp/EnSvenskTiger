@@ -16,7 +16,7 @@ public class EventWindow : MonoBehaviour
     Sprite[] ResourceIcons = new Sprite[(int)Resource.Count];
 
     [SerializeField]
-    Image[] EffectIcons = new Image[3], EffectIconsOp1 = new Image[3], EffectIconsOp2 = new Image[3];
+    Image[] EffectIcons = new Image[4], EffectIconsOp1 = new Image[4], EffectIconsOp2 = new Image[4];
 
 
     GameEvent Event;
