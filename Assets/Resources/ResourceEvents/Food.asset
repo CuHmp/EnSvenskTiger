@@ -25,7 +25,7 @@ MonoBehaviour:
   Options:
   - flavorText:
       text:
-      - 
+      - Exchange for iron
       - 
       - 
     effect:
@@ -33,7 +33,7 @@ MonoBehaviour:
       resource: 7
   - flavorText:
       text:
-      - 
+      - Exchange for money
       - 
       - 
     effect:

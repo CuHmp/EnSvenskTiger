@@ -28,10 +28,13 @@ public class EventWindow : MonoBehaviour
 
     public GameEvent tester;
 
-
+    static int WaitMonth = 999;
+    static int CurrentMonth = 999;
+    static bool is_activated = false;
     public void LaunchEvent(GameEvent e)
     {
         Event = e;
+        Title.text = "";
         if (e.GetType() == typeof(RandomEvent))
         {
             Title.text = "[Random Event]";
@@ -65,9 +68,25 @@ public class EventWindow : MonoBehaviour
     void OnEnable()
     {
         TimeMaster.TogglePlay(false);
+        WaitMonth = 2;
+        is_activated = true;
     }
 
-    
+    public void AddListner() {
+        TimeMaster.onTick.AddListener(Tick);
+        WaitMonth = 9999;
+    }
+
+    private void Tick() {
+        if(WaitMonth > 0 && CurrentMonth != TimeMaster.GetTime().Month && is_activated) {
+            WaitMonth--;
+            CurrentMonth = TimeMaster.GetTime().Month;
+        }
+        if(WaitMonth == 0) {
+            ChooseOption(0);
+            WaitMonth = 9999;
+        }
+    }
 
     private void OnDisable()
     {
@@ -76,6 +95,7 @@ public class EventWindow : MonoBehaviour
         ConstEffects = new List<Effect>();
         em.RemoveEventFromQueue(Event);
         TimeMaster.TogglePlay(true);
+        is_activated = false;
     }
 
     public void ChooseOption(int index)

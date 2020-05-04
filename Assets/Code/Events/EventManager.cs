@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
@@ -27,7 +27,7 @@ public class EventManager : ManagerManager
     void Awake()
     {
         eventWindow = GameObject.Find("EventWindow").GetComponent<EventWindow>();
-
+        eventWindow.AddListner();
         eventWindow.gameObject.SetActive(false);
 
 
