@@ -14,27 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TimelineEvent
   title:
     text:
-    - 
+    - Operation Overlord
     - 
     - 
   flavorText:
     text:
-    - 
+    - The allies have successfully invaded mainland Europe, and formed a beach head
+      in Normandy, France.
     - 
     - 
   Options:
   - flavorText:
       text:
-      - 
-      - 
-      - 
-    effect: []
-  - flavorText:
-      text:
-      - 
+      - An interesting developement
       - 
       - 
     effect: []
-  Effects: []
+  Effects:
+  - changeValue: 1
+    resource: 1
   date:
-    _dateTime: 1/1/0001 12:00:00 AM
+    _dateTime: 6/6/1944 12:00:00 AM
