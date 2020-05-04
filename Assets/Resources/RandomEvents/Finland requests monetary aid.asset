@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 25963e611564adb43876880c41bbba68, type: 3}
   m_Name: Finland requests monetary aid
   m_EditorClassIdentifier: Assembly-CSharp::RandomEvent
   title:
@@ -21,7 +21,7 @@ MonoBehaviour:
     text:
     - Finland asks for financial support in their war against the soviets. Supporting
       our Finnish brothers will be seen as positive by both or population and the
-      Axis, of which Finland is a member.4
+      Axis, of which Finland is a member.
     - 
     - 
   Options:
