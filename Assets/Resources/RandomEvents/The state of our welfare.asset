@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25963e611564adb43876880c41bbba68, type: 3}
+  m_Name: The state of our welfare
+  m_EditorClassIdentifier: 
+  title:
+    text:
+    - The state of our welfare
+    - 
+  flavorText:
+    text:
+    - Sweden's poor are struggling to get by in these trying times.
+    - 
+  Options:
+  - flavorText:
+      text:
+      - Provide them with welfare
+      - 
+    effect:
+    - changeValue: 1
+      resource: 4
+    - changeValue: -1
+      resource: 8
+  - flavorText:
+      text:
+      - Do nothing
+      - 
+    effect:
+    - changeValue: -1
+      resource: 9
+  Effects: []
+  condition:
+    minDate:
+      _dateTime: 9/25/1066 12:00:00 AM
+    maxDate:
+      _dateTime: 5/5/2020 12:00:00 AM

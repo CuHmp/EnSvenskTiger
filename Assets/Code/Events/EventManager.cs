@@ -6,7 +6,6 @@ using System;
 
 public class EventManager : ManagerManager
 {
-    //TimeMaster tm;
 
     List<TimelineEvent> TimelineEvents;
 

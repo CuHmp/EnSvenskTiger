@@ -10,43 +10,40 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25963e611564adb43876880c41bbba68, type: 3}
-  m_Name: Finland requests monetary aid
-  m_EditorClassIdentifier: Assembly-CSharp::RandomEvent
+  m_Name: International Aid
+  m_EditorClassIdentifier: 
   title:
     text:
-    - Finland requests monetary aid
+    - International aid
     - 
     - 
   flavorText:
     text:
-    - Finland asks for financial support in their war against the soviets. Supporting
-      our Finnish brothers will be seen as positive by both or population and the
-      Axis, of which Finland is a member.
+    - Many countries across Europe are suffering because of the war, perhaps we should
+      send them monetary aid?
     - 
     - 
   Options:
   - flavorText:
       text:
-      - Agree
+      - Send aid
       - 
       - 
     effect:
     - changeValue: 1
-      resource: 9
+      resource: 0
     - changeValue: 1
-      resource: 2
-    - changeValue: -1
-      resource: 4
+      resource: 9
     - changeValue: -1
       resource: 8
   - flavorText:
       text:
-      - Disagree
+      - Do nothing
       - 
       - 
     effect:
     - changeValue: 1
-      resource: 4
+      resource: 2
     - changeValue: -1
       resource: 9
   Effects: []
@@ -54,4 +51,4 @@ MonoBehaviour:
     minDate:
       _dateTime: 9/25/1066 12:00:00 AM
     maxDate:
-      _dateTime: 5/1/2020 12:00:00 AM
+      _dateTime: 5/5/2020 12:00:00 AM

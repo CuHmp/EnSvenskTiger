@@ -7,44 +7,43 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25963e611564adb43876880c41bbba68, type: 3}
-  m_Name: En Svensk Tiger
-  m_EditorClassIdentifier: Assembly-CSharp::RandomEvent
+  m_Name: Refugees marching ashore
+  m_EditorClassIdentifier: 
   title:
     text:
-    - A Swedish Tiger
-    - En Svensk Tiger
-    - "\u05D8\u05D9\u05D2\u05E8\u05D9\u05E1 \u05E9\u05D5\u05D5\u05D3\u05D9"
+    - Refugees marching ashore
+    - 
   flavorText:
     text:
-    - Prying eyes and listening ears are all around us. Concerns are growing about
-      our national security and the possibility our secrets reaching the Germans.
-      It has been proposed that we launch a campaign to promote discretion. Perhaps
-      with a pun?
-    - 
+    - Refugess from the war arrive on Swedish shores, what shall be done with them?
     - 
   Options:
   - flavorText:
       text:
-      - A Swede keeps silent
-      - 
+      - Let them in
       - 
     effect:
-    - changeValue: -1
+    - changeValue: 1
       resource: 9
+    - changeValue: 1
+      resource: 0
+    - changeValue: -1
+      resource: 2
   - flavorText:
       text:
-      - No need for anything like that
-      - 
+      - We are a neutral country, send them back!
       - 
     effect:
     - changeValue: -1
+      resource: 0
+    - changeValue: 1
       resource: 2
   Effects: []
   condition:
     minDate:
       _dateTime: 9/25/1066 12:00:00 AM
     maxDate:
-      _dateTime: 5/1/2020 12:00:00 AM
+      _dateTime: 5/5/2020 12:00:00 AM

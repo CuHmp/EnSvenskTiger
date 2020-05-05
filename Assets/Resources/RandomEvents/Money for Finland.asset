@@ -7,44 +7,51 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25963e611564adb43876880c41bbba68, type: 3}
-  m_Name: En Svensk Tiger
+  m_Name: Money for Finland
   m_EditorClassIdentifier: Assembly-CSharp::RandomEvent
   title:
     text:
-    - A Swedish Tiger
-    - En Svensk Tiger
-    - "\u05D8\u05D9\u05D2\u05E8\u05D9\u05E1 \u05E9\u05D5\u05D5\u05D3\u05D9"
+    - Money for Finland
+    - 
+    - 
   flavorText:
     text:
-    - Prying eyes and listening ears are all around us. Concerns are growing about
-      our national security and the possibility our secrets reaching the Germans.
-      It has been proposed that we launch a campaign to promote discretion. Perhaps
-      with a pun?
+    - Finland asks for financial support in their war against the soviets. Supporting
+      our Finnish brothers will be seen as positive by both or population and the
+      Axis, of which Finland is a member.
     - 
     - 
   Options:
   - flavorText:
       text:
-      - A Swede keeps silent
+      - Agree
       - 
       - 
     effect:
-    - changeValue: -1
+    - changeValue: 1
       resource: 9
+    - changeValue: 1
+      resource: 2
+    - changeValue: -1
+      resource: 4
+    - changeValue: -1
+      resource: 8
   - flavorText:
       text:
-      - No need for anything like that
+      - Disagree
       - 
       - 
     effect:
+    - changeValue: 1
+      resource: 4
     - changeValue: -1
-      resource: 2
+      resource: 9
   Effects: []
   condition:
     minDate:
-      _dateTime: 9/25/1066 12:00:00 AM
+      _dateTime: 11/30/1939 12:00:00 AM
     maxDate:
-      _dateTime: 5/1/2020 12:00:00 AM
+      _dateTime: 9/19/1944 12:00:00 AM

@@ -7,7 +7,7 @@ public enum Language
 {
     English,
     Swedish,
-    Hebrew,
+    //Hebrew,
     Count
 
 

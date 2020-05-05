@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25963e611564adb43876880c41bbba68, type: 3}
-  m_Name: Comet sighted
+  m_Name: Komet sighted
   m_EditorClassIdentifier: Assembly-CSharp::RandomEvent
   title:
     text:
@@ -19,7 +19,8 @@ MonoBehaviour:
     - 
   flavorText:
     text:
-    - A German plane of the Komet model has been spotted in the skies above Sweden.
+    - A German Komet plane has been spotted in the skies above Sweden. What could
+      this mean for us?
     - 
     - 
   Options:

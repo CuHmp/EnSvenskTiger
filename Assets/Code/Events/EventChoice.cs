@@ -49,6 +49,7 @@ public class EventChoice
 public class Effect
 {
     [SerializeField]
+    [Range(-3, 3)]
     int changeValue;
     [SerializeField]
     Resource resource;
