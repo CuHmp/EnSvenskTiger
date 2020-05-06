@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25963e611564adb43876880c41bbba68, type: 3}
+  m_Name: Menace in the east
+  m_EditorClassIdentifier: 
+  title:
+    text:
+    - Menace in the east
+    - 
+  flavorText:
+    text:
+    - The people fear and impending soviet invasion, perhaps we could negotiate instead.
+    - 
+  Options:
+  - flavorText:
+      text:
+      - Negotiate with the soviets
+      - 
+    effect:
+    - changeValue: 1
+      resource: 4
+    - changeValue: -1
+      resource: 0
+  - flavorText:
+      text:
+      - There's no need to placate them
+      - 
+    effect:
+    - changeValue: -1
+      resource: 4
+  Effects: []
+  condition:
+    minDate:
+      _dateTime: 9/25/1066 12:00:00 AM
+    maxDate:
+      _dateTime: 5/6/2020 12:00:00 AM

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25963e611564adb43876880c41bbba68, type: 3}
+  m_Name: Food for the people
+  m_EditorClassIdentifier: 
+  title:
+    text:
+    - Food for the people
+    - 
+  flavorText:
+    text:
+    - The USSR demands we send them some of our food
+    - 
+  Options:
+  - flavorText:
+      text:
+      - We better placate them
+      - 
+    effect:
+    - changeValue: 1
+      resource: 4
+    - changeValue: -1
+      resource: 6
+  - flavorText:
+      text:
+      - Why would we ever agree to an arrangement like that?
+      - 
+    effect:
+    - changeValue: 1
+      resource: 9
+    - changeValue: -2
+      resource: 4
+  Effects: []
+  condition:
+    minDate:
+      _dateTime: 9/25/1066 12:00:00 AM
+    maxDate:
+      _dateTime: 5/6/2020 12:00:00 AM
