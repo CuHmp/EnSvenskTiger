@@ -153,7 +153,7 @@ public class ResourceManager : ManagerManager {
     }
 
     private static void CheckHighOpinion(string _nation_name, int _nation_opinion) {
-        if(_nation_opinion >= 8) {
+        if(_nation_opinion > 8) {
             if (tribute_duration_[_nation_name] < 0) { // makes sure that a tribute countdown has not started
                 tribute_duration_[_nation_name] = frequency_tribute_sending_;
             }

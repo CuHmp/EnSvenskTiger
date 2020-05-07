@@ -15,17 +15,18 @@ MonoBehaviour:
   title:
     text:
     - A taxing effort
-    - 
+    - En skattande prestation
   flavorText:
     text:
     - Increasing taxation could help us afford the increased expenses, but it's unlikely
       to be popular.
-    - 
+    - "Att \xF6ka skatterna kan hj\xE4lpa oss att utgifterna men kommer inte vara
+      popul\xE4rt hos befolkningen"
   Options:
   - flavorText:
       text:
       - Increase taxes
-      - 
+      - "H\xF6j skatterna"
     effect:
     - changeValue: 1
       resource: 8
@@ -34,7 +35,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Do nothing
-      - 
+      - "G\xF6r inget"
     effect: []
   Effects:
   - changeValue: -1

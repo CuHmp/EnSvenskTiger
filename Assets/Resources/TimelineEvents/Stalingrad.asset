@@ -29,11 +29,11 @@ MonoBehaviour:
       - This may turn the tide of the war
       - 
       - 
-    effect:
-    - changeValue: 2
-      resource: 5
-    - changeValue: -1
-      resource: 3
-  Effects: []
+    effect: []
+  Effects:
+  - changeValue: 2
+    resource: 5
+  - changeValue: -1
+    resource: 3
   date:
     _dateTime: 2/2/1943 12:00:00 AM

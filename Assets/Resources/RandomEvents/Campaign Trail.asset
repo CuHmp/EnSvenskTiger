@@ -15,17 +15,18 @@ MonoBehaviour:
   title:
     text:
     - Campaign Trail
-    - 
+    - "F\xE4ltt\xE5g"
   flavorText:
     text:
     - With the elections always around the corner, it's never a bad idea to campaign
       to make sure you get re-elected.
-    - 
+    - "Med ett val runt h\xF6rnet \xE4r det aldrig en d\xE5lig idee att g\xE5 p\xE5
+      en val kampanj f\xF6r att s\xE4kerst\xE4lla omvalet"
   Options:
   - flavorText:
       text:
       - Campaign lightly
-      - 
+      - "En l\xE4tt kampanj"
     effect:
     - changeValue: 1
       resource: 9
@@ -34,7 +35,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Campaign extensively
-      - 
+      - "En genomg\xE5ende kampanj"
     effect:
     - changeValue: 3
       resource: 9

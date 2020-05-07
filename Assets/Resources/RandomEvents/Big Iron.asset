@@ -26,7 +26,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Agree
-      - 
+      - "H\xE5lla med om"
       - 
     effect:
     - changeValue: 1
@@ -38,7 +38,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Disagree
-      - 
+      - "Ist\xE4mmer ickse"
       - 
     effect:
     - changeValue: -1

@@ -15,19 +15,20 @@ MonoBehaviour:
   title:
     text:
     - Brothers in Arms
-    - 
+    - "Vapenbr\xF6der"
     - 
   flavorText:
     text:
-    - The Danish and Norwegian governments in exilw seek to train military units
+    - The Danish and Norwegian governments in exile seek to train military units
       on Swedish soil, in secret and out of axis reach.
-    - 
+    - "Den Danska och Norska landsf\xF6rvisade regeringen vill tr\xE4na soldater 
+      i sverige, utanf\xF6r nazisterna inflytande och vetande"
     - 
   Options:
   - flavorText:
       text:
       - Allow them to train in secret
-      - 
+      - "Till\xE5t dom att tr\xE4na i hemlighet"
       - 
     effect:
     - changeValue: 1
@@ -35,7 +36,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - We must remain neutral!
-      - 
+      - "Vi m\xE5ste vara neutrala"
       - 
     effect:
     - changeValue: 1

@@ -40,7 +40,7 @@ MonoBehaviour:
       - 
     effect:
     - changeValue: -1
-      resource: 5
+      resource: 4
   Effects: []
   condition:
     minDate:
