@@ -58,8 +58,7 @@ public class EventManager : ManagerManager
     public void RemoveEventFromQueue(GameEvent e)
     {
         EventQueue.Remove(e);
-        UI = FindObjectOfType<UIManager>();
-        UI.UpdateStats();
+        
     }
 
     void ExecuteEvent(GameEvent e)

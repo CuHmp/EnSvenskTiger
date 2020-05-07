@@ -348,18 +348,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 568873875}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1878305522 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 862600346736603877, guid: fa16e34570140ae4fbb347d8a2b3c5b0,
-    type: 3}
-  m_PrefabInstance: {fileID: 5832064473990660505}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1906612953
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -768,6 +756,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5495619830918827743, guid: fa16e34570140ae4fbb347d8a2b3c5b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5732773420838108918, guid: fa16e34570140ae4fbb347d8a2b3c5b0,
         type: 3}
       propertyPath: m_CullTransparentMesh
@@ -817,6 +810,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6341137936318874982, guid: fa16e34570140ae4fbb347d8a2b3c5b0,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 90e2a45e536404c4a8d6acb0d974de41,
+        type: 3}
+    - target: {fileID: 6493399300528752056, guid: fa16e34570140ae4fbb347d8a2b3c5b0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493399300528752056, guid: fa16e34570140ae4fbb347d8a2b3c5b0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493399300528752056, guid: fa16e34570140ae4fbb347d8a2b3c5b0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 155.4
       objectReference: {fileID: 0}
     - target: {fileID: 7192665618785692872, guid: fa16e34570140ae4fbb347d8a2b3c5b0,
         type: 3}
@@ -878,10 +892,5 @@ PrefabInstance:
       propertyPath: m_Colors.m_DisabledColor.b
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 9142823703317861128, guid: fa16e34570140ae4fbb347d8a2b3c5b0,
-        type: 3}
-      propertyPath: face
-      value: 
-      objectReference: {fileID: 1878305522}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa16e34570140ae4fbb347d8a2b3c5b0, type: 3}

@@ -636,6 +636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OpinionSlider: {fileID: 7348585864195385013}
   PowerSlider: {fileID: 4625890569995342159}
+  PowerFill: {fileID: 2331143258999052974}
 --- !u!1 &6255911054497470394
 GameObject:
   m_ObjectHideFlags: 0

@@ -96,6 +96,8 @@ public class EventWindow : MonoBehaviour
         em.RemoveEventFromQueue(Event);
         TimeMaster.TogglePlay(true);
         is_activated = false;
+        UIManager UI = FindObjectOfType<UIManager>();
+        UI.UpdateStats();
     }
 
     public void ChooseOption(int index)
