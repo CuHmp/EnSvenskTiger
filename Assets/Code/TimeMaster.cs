@@ -29,7 +29,7 @@ public class TimeMaster : ManagerManager {
     }
 
     public override bool Init() {
-        TogglePlay(false);
+        
         speed_before_paused_ = 1;
         Debug.Log("TimeMaster Initialized");
         return true;

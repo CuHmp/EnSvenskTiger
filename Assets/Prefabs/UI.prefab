@@ -1568,22 +1568,22 @@ PrefabInstance:
     - target: {fileID: 8803503321638625349, guid: 7073ac3fbcf3faf42b3a950df6adabaf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 11.9
       objectReference: {fileID: 0}
     - target: {fileID: 8803503321638625349, guid: 7073ac3fbcf3faf42b3a950df6adabaf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -58.8
       objectReference: {fileID: 0}
     - target: {fileID: 8803503321638625349, guid: 7073ac3fbcf3faf42b3a950df6adabaf,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 500
+      value: 463.05078
       objectReference: {fileID: 0}
     - target: {fileID: 8803503321638625349, guid: 7073ac3fbcf3faf42b3a950df6adabaf,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 400
+      value: 517.5702
       objectReference: {fileID: 0}
     - target: {fileID: 8803503321638625349, guid: 7073ac3fbcf3faf42b3a950df6adabaf,
         type: 3}
@@ -1620,10 +1620,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EventWindow
       objectReference: {fileID: 0}
-    - target: {fileID: 8803503321638625350, guid: 7073ac3fbcf3faf42b3a950df6adabaf,
+    - target: {fileID: 8803503321866949826, guid: 7073ac3fbcf3faf42b3a950df6adabaf,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      propertyPath: m_AnchoredPosition.y
+      value: -0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7073ac3fbcf3faf42b3a950df6adabaf, type: 3}
