@@ -6,14 +6,14 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    public Button StartButton, ExitButton;
+    public Button StartButton, ExitButton, CreditsButton;
 
     [LabeledArray(typeof(Language))]
     public Button[] LanguageButtons = new Button[(int)Language.Count];
 
-    public LangString StartText, ExitText, LangText;
+    public LangString StartText, ExitText, LangText, CreditText;
 
-    public Text start, exit, lang;
+    public Text start, exit, lang, creds;
 
     void Awake()
     {
@@ -30,7 +30,12 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadSceneAsync(1);
+    }
+
+    public void Credits()
+    {
+        SceneManager.LoadSceneAsync(2);
     }
 
     void ResetAllText()
@@ -38,5 +43,6 @@ public class MainMenu : MonoBehaviour
         start.text = StartText.GetText();
         lang.text = LangText.GetText();
         exit.text = ExitText.GetText();
+        creds.text = CreditText.GetText();
     }
 }
