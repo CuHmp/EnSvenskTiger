@@ -29,7 +29,7 @@ public class EventManager : ManagerManager
     {
         eventWindow = GameObject.Find("EventWindow").GetComponent<EventWindow>();
         eventWindow.AddListner();
-        eventWindow.gameObject.SetActive(false);
+        
 
 
         Debug.Log("EventManager Created");
@@ -41,7 +41,7 @@ public class EventManager : ManagerManager
         ConditionalTimelineEvents = new List<ConditionalTimelineEvent>(Resources.LoadAll<ConditionalTimelineEvent>("ConditionalTimelineEvents"));
         RandomEvents = new List<RandomEvent>(Resources.LoadAll<RandomEvent>("RandomEvents"));
         UI = FindObjectOfType<UIManager>();
-
+        eventWindow.gameObject.SetActive(false);
         TimeMaster.onTick.AddListener(EventChecker);
 
         Debug.Log("EventManager Initialized");
