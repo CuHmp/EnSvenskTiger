@@ -15,20 +15,22 @@ MonoBehaviour:
   title:
     text:
     - Italy switches sides
-    - 
+    - Italien byter sida
     - 
   flavorText:
     text:
-    - After being successfully invaded by the allies and mussolini having been ousted
+    - After being successfully invaded by the allies and Mussolini having been ousted
       by his people, Italy has joined the side of the allies and declared war against
       its former ally Germany.
-    - 
+    - "Efter en lyckad invasion av de allierade p\xE5 italien, s\xE5 har Mussolini
+      blivit utkastad av sitt folk. Med detta har Italien g\xE5tt med de allierade
+      och f\xF6rklarat krig mot sin f\xF6re detta allierade Tyskland"
     - 
   Options:
   - flavorText:
       text:
       - Is the end approaching?
-      - 
+      - "N\xE4rmar sig slutet?"
       - 
     effect: []
   Effects:

@@ -15,20 +15,22 @@ MonoBehaviour:
   title:
     text:
     - Unexpected Betrayal
-    - 
+    - "Ov\xE4ntad f\xF6rr\xE5d"
     - 
   flavorText:
     text:
-    - In June of 1941, Germany broke its non-aggression pact with the USSR, the Ribbentrop-Molotiv
+    - In June of 1941, Germany broke its non-aggression pact with the USSR, the Ribbentrop-Molotov
       pact, by launching an invasion of the soviet union. Germany now requests Sweden's
-      permission to send troops through Swedeish land to the Finnish front.
-    - 
+      permission to send troops through Swedish land to the Finnish front.
+    - "I Juni 1941 br\xF6t Tyskland sin icke-aggressionspakt med Sovjetunionen, Ribbentrop-Molotov-pakten,
+      genom att inleda en invasion av Sovjetunionen. Tyskland beg\xE4r nu Sveriges
+      tillst\xE5nd att skicka trupper genom svensk territorium till den finska fronten."
     - 
   Options:
   - flavorText:
       text:
       - Allow
-      - 
+      - "Till\xE5t"
       - 
     effect:
     - changeValue: 1
@@ -40,7 +42,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Do not allow
-      - 
+      - "Till\xE5t inte"
       - 
     effect:
     - changeValue: 1

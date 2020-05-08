@@ -15,19 +15,20 @@ MonoBehaviour:
   title:
     text:
     - Talvisota
-    - 
+    - Talvisota
     - 
   flavorText:
     text:
     - The soviet union has decided to invade Finland with the goal of conquest, starting
       the winter war.
-    - 
+    - "Sovjetunionen har b\xF6rjat sin invasion av Finland med m\xE5let av total
+      er\xF6vring, detta signalerar b\xF6rjan av vinterkriget"
     - 
   Options:
   - flavorText:
       text:
       - Stalin should not underestimate the Finns.
-      - 
+      - "Stalin b\xF6r inte underskatta finl\xE4ndarna."
       - 
     effect: []
   Effects:

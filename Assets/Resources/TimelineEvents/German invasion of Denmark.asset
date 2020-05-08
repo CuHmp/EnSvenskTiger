@@ -15,19 +15,20 @@ MonoBehaviour:
   title:
     text:
     - German occupation of Denmark
-    - 
+    - 'Den Tyska ockuper Danmark '
     - 
   flavorText:
     text:
     - On April 9th 1940, Germany occupied Denmark, our fellow scandinavian country.
       The germans are already invading Norway.
-    - 
+    - "Den 9nd April 1940, Tyskland ockuperade Danmark. En av v\xE5ra grann nationer.
+      Tyskarna \xE4r redan p\xE5 v\xE4g att invadera Norge."
     - 
   Options:
   - flavorText:
       text:
       - Let's hope the nazis don't continue down this path
-      - 
+      - "L\xE5t oss hoppas att nazierna inte forts\xE4tter den h\xE4r v\xE4gen"
       - 
     effect: []
   Effects:

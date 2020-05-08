@@ -15,20 +15,23 @@ MonoBehaviour:
   title:
     text:
     - Bombing of Pearl Harbor
-    - 
+    - Bombning av Pearl Harbor
     - 
   flavorText:
     text:
     - In their effort to control the pacific, Japan has bombed the American naval
       base of Pearl Harbor. In a show of solidarity, Hitler also declared war on
       the USA, who are now part of the war on the allied side.
-    - 
+    - "I sina f\xF6rs\xF6k att styra Stilla havet, har Japan bombade den amerikanska
+      hamnen Pearl Harbor vilket var en f\xF6rklaring av krig mot Amerika, i ett
+      tecken av solidaritet har Hitler ocks\xE5 f\xF6rklarat krig mot Amerika som
+      \xE4r nu en del av kriget p\xE5 den allierades sida."
     - 
   Options:
   - flavorText:
       text:
       - An interesting developement.
-      - 
+      - En intressant utveckling.
       - 
     effect: []
   Effects:

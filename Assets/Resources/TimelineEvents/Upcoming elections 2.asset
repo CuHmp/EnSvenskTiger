@@ -15,19 +15,20 @@ MonoBehaviour:
   title:
     text:
     - Upcoming Elections
-    - 
+    - Kommande val
     - 
   flavorText:
     text:
     - In six months time, Sweden will need to elect its parliament once more. Make
       sure your popularity remains at least 40%
-    - 
+    - "Om sex m\xE5nader kommer Sverige att beh\xF6va v\xE4lja sitt parlament \xE4nnu
+      en g\xE5ng. Se till att din popularitet \xE4r minst 40%"
     - 
   Options:
   - flavorText:
       text:
       - Let the race begin
-      - 
+      - "L\xE5t loppet b\xF6rja"
       - 
     effect: []
   Effects: []

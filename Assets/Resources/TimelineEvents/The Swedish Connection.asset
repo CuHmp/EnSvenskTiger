@@ -15,19 +15,20 @@ MonoBehaviour:
   title:
     text:
     - The Swedish Connection
-    - 
+    - Den Svenska kopplingen
     - 
   flavorText:
     text:
     - Germany requests to transfer supplies and armaments through Sweden and into
       Norway.
-    - 
+    - "Tyskland beg\xE4r att kunna \xF6verf\xF6ra f\xF6rn\xF6denheter och vapen genom
+      Sverige in till Norge."
     - 
   Options:
   - flavorText:
       text:
       - Allow
-      - 
+      - "Till\xE5t"
       - 
     effect:
     - changeValue: 2
@@ -37,7 +38,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Deny
-      - 
+      - "Till\xE5t inte"
       - 
     effect:
     - changeValue: 1

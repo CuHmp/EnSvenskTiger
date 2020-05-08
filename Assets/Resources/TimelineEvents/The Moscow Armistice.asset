@@ -15,19 +15,20 @@ MonoBehaviour:
   title:
     text:
     - The Moscow armistice
-    - 
+    - "Den Moskvaska vapenstillest\xE5nd"
     - 
   flavorText:
     text:
     - Finland and the USSR have finally signed an armistice, ending the continuation
       war and costing the Axis another ally.
-    - 
+    - "Finland och Sovjetunionen har \xE4ntligen undertecknat ett vapenstillest\xE5nd,
+      avslutar kriget mellan dom. Konsekvent kostar nazisterna en annan allierad."
     - 
   Options:
   - flavorText:
       text:
       - The end of the war is in sight
-      - 
+      - "Slutet p\xE5 kriget \xE4r i sikte"
       - 
     effect: []
   Effects:
