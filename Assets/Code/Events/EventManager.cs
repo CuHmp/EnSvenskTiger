@@ -21,6 +21,8 @@ public class EventManager : ManagerManager
     EventWindow eventWindow;
     int[] RandomEventDates = { 1, 4, 7, 10 };
 
+    static DateTime lastResourceEvent = new DateTime();
+    static readonly int CooldownMonths = 1;
     public UIManager UI;
 
     void Awake()
@@ -68,6 +70,10 @@ public class EventManager : ManagerManager
         if (e.GetType() != typeof(ResourceEvent))
         {
             AddToPastEvents(e);
+        }
+        else
+        {
+            lastResourceEvent = TimeMaster.GetTime();
         }
     }
 
@@ -138,7 +144,10 @@ public class EventManager : ManagerManager
 
     public static void CreateResourceEvent(ResourceEvent re)
     {
-        AddEventToQueue(re);
+        if (lastResourceEvent.AddMonths(CooldownMonths) <= TimeMaster.GetTime())
+        {
+            AddEventToQueue(re);
+        }
     }
 
 }
