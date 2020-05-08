@@ -93,11 +93,17 @@ public class EventWindow : MonoBehaviour
         em = FindObjectOfType<EventManager>();
         OpEffects = new List<Effect>[2];
         ConstEffects = new List<Effect>();
-        em.RemoveEventFromQueue(Event);
+        if (em != null)
+        {
+            em.RemoveEventFromQueue(Event);
+        }
         TimeMaster.TogglePlay(true);
         is_activated = false;
         UIManager UI = FindObjectOfType<UIManager>();
-        UI.UpdateStats();
+        if (UI != null)
+        {
+            UI.UpdateStats();
+        }
     }
 
     public void ChooseOption(int index)
