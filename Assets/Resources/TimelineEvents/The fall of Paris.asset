@@ -15,17 +15,18 @@ MonoBehaviour:
   title:
     text:
     - The fall of Paris
-    - 
+    - Paris har fallit
   flavorText:
     text:
     - After a surprise invasion by German forces through Belgian lands, the French
       Republic surrenders to the nazi invaders.
-    - 
+    - "Efter en \xF6verrasknings invasion av tyska trupper genom belgisk land har
+      den Franska republiken gett upp till de nazistiska angripare."
   Options:
   - flavorText:
       text:
       - Hope we're not next
-      - 
+      - "Hoppas att vi inte \xE4r n\xE4sta"
     effect: []
   Effects:
   - changeValue: -1

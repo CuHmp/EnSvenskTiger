@@ -32,7 +32,21 @@ MonoBehaviour:
       must also make sure your popular support (on the left side of the screen) does
       not reach 0, as you will lose the game. It is now on you to lead Sweden through
       the war.
-    - 
+    - "Den 1 september 1939, b\xF6rjar Nazist Tyskland sin invasion av Poland st\xF6rta
+      hela europa och senare hela v\xE4rlden intill det andra v\xE4rldskriget. Du,
+      Sverige, har valt att forts\xE4tta vara neutrala i konflikten. F\xF6r att uppr\xE4tth\xE5lla
+      neutraliteten kan du dock beh\xF6va g\xF6ra sv\xE5ra val f\xF6r att se till
+      att varken de Allierade, Nazisterna eller Sovjeterna (Repriserade av deras
+      flaggor ovan) att gilla eller ogilla dig f\xF6r mycket. Om en ledare gillar
+      dig f\xF6r mycket s\xE5 kommer dom beg\xE4ra att du betalar en av dina resurser
+      i biflod (skatt) var 3dje m\xE5nad. Om en resurs tar slut s\xE5 f\xF6rlorar
+      du. Om en ledare gillar dig mindre \xE4n de \xE4r kraftfulla kommer det leda
+      till krig, du har 6 m\xE5nader att laga relationen eller f\xF6rlora spelet.
+      Dessutom \xE4r du ett demokratiskt land och kommer att beh\xF6va m\xF6ta val
+      vart fj\xE4rde \xE5r, du beh\xF6ver ha mer \xE4n 40 % popul\xE4rt st\xF6d.
+      Du m\xE5ste ocks\xE5 se till att ditt popul\xE4ra st\xF6d (p\xE5 v\xE4nster
+      sida av sk\xE4rmen) inte n\xE5r 0, eftersom du f\xF6rlorar spelet. Det \xE4r
+      nu p\xE5 dig att leda Sverige genom kriget."
     - "\u05D1\u05E8\u05D0\u05E9\u05D5\u05DF \u05DC\u05E1\u05E4\u05D8\u05DE\u05D1\u05E8
       1939, \u05D2\u05E8\u05DE\u05E0\u05D9\u05D4 \u05D4\u05E0\u05D0\u05E6\u05D9\u05EA
       \u05E4\u05DC\u05E9\u05D4 \u05DC\u05E4\u05D5\u05DC\u05D9\u05DF \u05D5\u05D4\u05EA\u05D7\u05D9\u05DC\u05D4
@@ -42,7 +56,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Start Game
-      - 
+      - Starta Spelet!
       - 
     effect: []
   Effects: []

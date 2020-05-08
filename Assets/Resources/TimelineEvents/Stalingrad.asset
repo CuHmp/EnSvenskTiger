@@ -15,19 +15,20 @@ MonoBehaviour:
   title:
     text:
     - Stalingrad.
-    - 
+    - Stalingrad
     - 
   flavorText:
     text:
     - The USSR has won the battle of Stalingrad and began pushing back against the
       nazi tide.
-    - 
+    - "Sovjetunionen har vunnit slaget om stalingrad och b\xF6rjade trycka tillbaka
+      mot den nazistiska tidvattnet."
     - 
   Options:
   - flavorText:
       text:
       - This may turn the tide of the war
-      - 
+      - "Detta kan v\xE4nda kriget"
       - 
     effect: []
   Effects:

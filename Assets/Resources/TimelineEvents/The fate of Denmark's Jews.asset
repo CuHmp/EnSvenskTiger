@@ -15,7 +15,7 @@ MonoBehaviour:
   title:
     text:
     - The fate of Denmark's Jews
-    - 
+    - "\xD6det av Danmarks Judar"
     - 
   flavorText:
     text:
@@ -23,13 +23,17 @@ MonoBehaviour:
       While the intended goal is for them to transfer their jews to Germany, the
       Danes intend to follow their orders to the letter and request Sweden to take
       in the Danish Jews instead to keep them safe.
-    - 
+    - "Danmarks guvern\xF6r har f\xE5tt ett uppdrag fr\xE5n de Tyska riket att bli
+      av med alla judar fr\xE5n sitt territorium. Det avsedda m\xE5let var att danskarna
+      skulle \xF6verf\xF6ra deras judar till Tyskland, men dom valde att f\xF6lja
+      sina order till punk och ber Sverige att ta in dom danska Judarna ist\xE4llet
+      f\xF6r att h\xE5lla dom s\xE4kra."
     - 
   Options:
   - flavorText:
       text:
       - Agree
-      - 
+      - "Inst\xE4mm"
       - 
     effect:
     - changeValue: 1
@@ -39,7 +43,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Disagree
-      - 
+      - "Inst\xE4mm inte"
       - 
     effect:
     - changeValue: 1

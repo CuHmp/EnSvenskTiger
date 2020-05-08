@@ -15,18 +15,19 @@ MonoBehaviour:
   title:
     text:
     - German occupation of Norway
-    - 
+    - Den Tyska ockuper Norge
     - 
   flavorText:
     text:
     - First Denmark and now Norway, all of Scandinavia but Sweden has fallen.
-    - 
+    - "F\xF6rst Danmark och ny Norge\u2026 Hela Skandinavien har fallit f\xF6rutom
+      Sverige"
     - 
   Options:
   - flavorText:
       text:
       - Let's hope our neutrality is respected
-      - 
+      - "L\xE5t oss hoppas att v\xE5r neutralitet respekteras"
       - 
     effect: []
   Effects:

@@ -15,18 +15,18 @@ MonoBehaviour:
   title:
     text:
     - Rumors of nazi invasion
-    - 
+    - Rykten om en nazistisk invation
     - 
   flavorText:
     text:
     - Rumors are circulating that the germans may be planning an attack against us.
-    - 
+    - Rykten cirkulerar att Tyskarna kanske planerar en attack mot oss.
     - 
   Options:
   - flavorText:
       text:
       - Worrying
-      - 
+      - Oroande
       - 
     effect: []
   Effects:

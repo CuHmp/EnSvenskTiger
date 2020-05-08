@@ -15,19 +15,20 @@ MonoBehaviour:
   title:
     text:
     - Operation Overlord
-    - 
+    - Operation Overlord
     - 
   flavorText:
     text:
     - The allies have successfully invaded mainland Europe, and formed a beach head
       in Normandy, France.
-    - 
+    - De allierade har lyckats att invadera fastlandet av europa och format en ny
+      front i Normandie, frankrike.
     - 
   Options:
   - flavorText:
       text:
       - An interesting developement
-      - 
+      - En intressant utveckling.
       - 
     effect: []
   Effects:
