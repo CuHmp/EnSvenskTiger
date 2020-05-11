@@ -14,23 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title:
     text:
-    - 
+    - Germany surrenders
     - 
   flavorText:
     text:
-    - 
+    - With the soviet Red Army fighting through Berlin and the allies not to far
+      on the western front, Adolf Hitler was announced to have commited suicide and
+      his replacement has announced Germany's unconditional surrender. After more
+      than 5 years of fighting, the war is finally over. Congratulations, you have
+      seen Sweden through this great ordeal.
     - 
   Options:
   - flavorText:
       text:
-      - 
-      - 
-    effect: []
-  - flavorText:
-      text:
-      - 
+      - End game
       - 
     effect: []
   Effects: []
   date:
-    _dateTime: 1/1/0001 12:00:00 AM
+    _dateTime: 9/5/1945 12:00:00 AM
