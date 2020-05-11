@@ -15,18 +15,19 @@ MonoBehaviour:
   title:
     text:
     - Controlled Agriculture
-    - 
+    - Kontrollerad jordbruk
     - 
   flavorText:
     text:
     - Swedish farmers are requesting farming subsidies to keep up with the demand.
-    - 
+    - "Svenska jordbrukare beg\xE4r jordbrukssubventioner f\xF6r att h\xE5lla j\xE4mna
+      steg med efterfr\xE5gan."
     - 
   Options:
   - flavorText:
       text:
       - Grant subsidies
-      - 
+      - Ge dom subventioner
       - 
     effect:
     - changeValue: 1
@@ -38,7 +39,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Deny request
-      - 
+      - "Neka beg\xE4ran"
       - 
     effect:
     - changeValue: -1

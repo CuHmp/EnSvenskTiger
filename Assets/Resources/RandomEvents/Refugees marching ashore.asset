@@ -15,16 +15,17 @@ MonoBehaviour:
   title:
     text:
     - Refugees marching ashore
-    - 
+    - Flyktingar marscherar i land
   flavorText:
     text:
-    - Refugess from the war arrive on Swedish shores, what shall be done with them?
-    - 
+    - Refugees from the war arrive on Swedish shores, what shall be done with them?
+    - "Flyktingar fr\xE5n kriget anl\xE4nder p\xE5 svenska str\xE4nder, vad ska g\xF6ras
+      med dem?"
   Options:
   - flavorText:
       text:
       - Let them in
-      - 
+      - "Sl\xE4pp in dem"
     effect:
     - changeValue: 1
       resource: 9
@@ -35,7 +36,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - We are a neutral country, send them back!
-      - 
+      - "Vi \xE4r ett neutralt land, skicka dem tillbaka!"
     effect:
     - changeValue: -1
       resource: 0

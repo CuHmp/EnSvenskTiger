@@ -15,20 +15,22 @@ MonoBehaviour:
   title:
     text:
     - Money for Finland
-    - 
+    - "Pengar f\xF6r Finland"
     - 
   flavorText:
     text:
     - Finland asks for financial support in their war against the soviets. Supporting
-      our Finnish brothers will be seen as positive by both or population and the
-      Axis, of which Finland is a member.
-    - 
+      our Finnish brothers will be seen as positive by both our population and the
+      nazis, of which Finland is a member.
+    - "Finland ber om ekonomiskt st\xF6d i sitt krig mot sovjeterna. Att st\xF6dja
+      v\xE5ra finska br\xF6der kommer att ses som positivt av b\xE5de v\xE5r befolkning
+      och nazierna, som Finland \xE4r medlem av."
     - 
   Options:
   - flavorText:
       text:
       - Agree
-      - 
+      - "H\xE5ll med"
       - 
     effect:
     - changeValue: 1
@@ -42,7 +44,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Disagree
-      - 
+      - "H\xE5ll inte med"
       - 
     effect:
     - changeValue: 1

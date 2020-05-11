@@ -15,17 +15,18 @@ MonoBehaviour:
   title:
     text:
     - Looming embargo
-    - 
+    - "P\xE5g\xE5ende embargo"
   flavorText:
     text:
     - Concerns are growing about the possibility of the axis and allies cutting off
       our import routes.
-    - 
+    - "Det v\xE4xer oro \xF6ver m\xF6jligheten att nazisterna och allierade st\xE4nger
+      av v\xE5ra importv\xE4gar."
   Options:
   - flavorText:
       text:
       - Attempt to prevent such a scenario
-      - 
+      - "F\xF6rs\xF6k att f\xF6rhindra ett s\xE5dant scenario"
     effect:
     - changeValue: 1
       resource: 0
@@ -36,7 +37,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Irrational fears, nothing more
-      - 
+      - "Irrationell r\xE4dsla, ingenting mer"
     effect:
     - changeValue: -1
       resource: 9

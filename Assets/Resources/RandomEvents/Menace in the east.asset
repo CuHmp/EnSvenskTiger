@@ -15,16 +15,17 @@ MonoBehaviour:
   title:
     text:
     - Menace in the east
-    - 
+    - "Hot i \xF6ster"
   flavorText:
     text:
     - The people fear and impending soviet invasion, perhaps we could negotiate instead.
-    - 
+    - "Folket \xE4r r\xE4dda f\xF6r den f\xF6rest\xE5ende sovjetinvasionen, vi kan
+      kanske f\xF6rhandla ist\xE4llet."
   Options:
   - flavorText:
       text:
       - Negotiate with the soviets
-      - 
+      - "F\xF6rhandla med sovjeterna"
     effect:
     - changeValue: 1
       resource: 4
@@ -33,7 +34,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - There's no need to placate them
-      - 
+      - "Det finns ingen anledning att f\xF6rsona dem"
     effect:
     - changeValue: -1
       resource: 4

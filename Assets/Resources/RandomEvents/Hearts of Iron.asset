@@ -27,7 +27,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Agree
-      - 
+      - "H\xE5ll med"
       - 
     effect:
     - changeValue: 2
@@ -39,7 +39,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Disagree
-      - 
+      - "H\xE5ll inte med"
       - 
     effect:
     - changeValue: -1

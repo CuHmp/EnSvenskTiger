@@ -15,16 +15,17 @@ MonoBehaviour:
   title:
     text:
     - The fate of Sweden's Jews
-    - 
+    - "\xD6det f\xF6r Sveriges judar"
   flavorText:
     text:
     - Fascist sympathizers demand we relinquish our Jewish citizens to Germany
-    - 
+    - "Fascistiska sympatis\xF6rer kr\xE4ver vi ger upp v\xE5ra judiska medborgare
+      till Tyskland"
   Options:
   - flavorText:
       text:
       - Give in to their demands
-      - 
+      - "Ge efter f\xF6r deras krav"
     effect:
     - changeValue: 2
       resource: 2
@@ -33,7 +34,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - We will not forsake our own citizens!
-      - 
+      - "Vi kommer inte att \xF6verge v\xE5ra egna medborgare!"
     effect:
     - changeValue: 1
       resource: 9

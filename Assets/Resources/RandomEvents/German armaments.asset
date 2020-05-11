@@ -15,16 +15,16 @@ MonoBehaviour:
   title:
     text:
     - German armaments
-    - 
+    - "Tyska bev\xE4pningar"
   flavorText:
     text:
     - The axis would like to transfer supplies through swedish territory.
-    - 
+    - "Nazisterna vill \xF6verf\xF6ra leveranser genom svenskt territorium."
   Options:
   - flavorText:
       text:
       - Allow it
-      - 
+      - "Till\xE5t det"
     effect:
     - changeValue: 1
       resource: 2
@@ -33,7 +33,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Deny it
-      - 
+      - "Till\xE5t inte det"
     effect:
     - changeValue: 1
       resource: 9

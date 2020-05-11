@@ -24,7 +24,11 @@ MonoBehaviour:
       the Second Chamber of the Riksdag. It is one of two general elections in Swedish
       history where a single party received more than half of the vote (the other
       occasion being 1968).
-    - 
+    - "Det allm\xE4nna valet h\xF6lls i Sverige den 15 september 1940. Det Socialdemokratiska
+      partiet f\xF6rblev det st\xF6rsta partiet och vann 134 av de 230 platserna
+      i Riksdagens. Det \xE4r ett av tv\xE5 allm\xE4nna val i svensk historia d\xE4r
+      ett enda parti fick mer \xE4n h\xE4lften av omr\xF6stningen (det andra tillf\xE4llet
+      var 1968)."
     - 
   Options:
   - flavorText:

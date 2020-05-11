@@ -15,17 +15,18 @@ MonoBehaviour:
   title:
     text:
     - With friends like these
-    - 
+    - "Med v\xE4nner som dessa"
   flavorText:
     text:
     - Critics are saying we have been too friendly with Germany and the people seem
       to agree.
-    - 
+    - "Kritiker s\xE4ger att vi har varit f\xF6r v\xE4nliga med Tyskland och v\xE5rt
+      folk verkar h\xE5lla med."
   Options:
   - flavorText:
       text:
       - Perhaps they are right
-      - 
+      - "De kanske har r\xE4tt"
     effect:
     - changeValue: 1
       resource: 9
@@ -34,9 +35,9 @@ MonoBehaviour:
   - flavorText:
       text:
       - What nonsense, we are only ensuring the safety of our nation!
-      - 
+      - "Vilka dumheter vi bara garantera s\xE4kerheten f\xF6r v\xE5r nation!"
     effect:
-    - changeValue: 0
+    - changeValue: -1
       resource: 9
   Effects: []
   condition:

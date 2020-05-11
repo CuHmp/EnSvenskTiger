@@ -15,16 +15,16 @@ MonoBehaviour:
   title:
     text:
     - Legal miners
-    - 
+    - Juridiska gruvarbetare
   flavorText:
     text:
     - Swedish iron miners request better working conditions.
-    - 
+    - "Svenska j\xE4rn gruvarbetare beg\xE4r b\xE4ttre arbetsf\xF6rh\xE5llanden."
   Options:
   - flavorText:
       text:
       - Provide funding
-      - 
+      - Ge finansiering
     effect:
     - changeValue: 1
       resource: 7
@@ -35,7 +35,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Deny request
-      - 
+      - "Neka beg\xE4ran"
     effect:
     - changeValue: -1
       resource: 9

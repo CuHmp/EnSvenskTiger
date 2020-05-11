@@ -15,18 +15,18 @@ MonoBehaviour:
   title:
     text:
     - Iron for Finland
-    - 
+    - "J\xE4rn f\xF6r Finland"
     - 
   flavorText:
     text:
     - Finland asks for iron for its war against the soviets.
-    - 
+    - "Finland ber om j\xE4rn f\xF6r sitt krig mot sovjeterna."
     - 
   Options:
   - flavorText:
       text:
       - Support our brothers to the east.
-      - 
+      - "St\xF6d v\xE5ra br\xF6der i \xF6ster."
       - 
     effect:
     - changeValue: 1
@@ -40,7 +40,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Deny their request
-      - 
+      - "F\xF6rneka deras beg\xE4ran"
       - 
     effect:
     - changeValue: 1

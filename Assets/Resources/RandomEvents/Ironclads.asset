@@ -15,16 +15,16 @@ MonoBehaviour:
   title:
     text:
     - Ironclads
-    - 
+    - "Pansarb\xE5tar "
   flavorText:
     text:
     - The UK would like to buy iron
-    - 
+    - "Storbritannien skulle vilja k\xF6pa j\xE4rn"
   Options:
   - flavorText:
       text:
       - Agree
-      - 
+      - "H\xE5ll med"
     effect:
     - changeValue: 1
       resource: 8
@@ -35,7 +35,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Disagree
-      - 
+      - "H\xE5ll inte med"
     effect:
     - changeValue: -1
       resource: 0

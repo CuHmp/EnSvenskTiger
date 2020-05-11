@@ -22,7 +22,9 @@ MonoBehaviour:
     - General elections were held in Sweden on 17 September 1944. The Swedish Social
       Democratic Party remained the largest party, winning 115 of the 230 seats in
       the Second Chamber of the Riksdag.
-    - 
+    - "Det allm\xE4nna valet h\xF6lls i Sverige den 17 september 1944. Svenska socialdemokratiska
+      partiet f\xF6rblev det st\xF6rsta partiet och vann 115 av de 230 platserna
+      i Riksdagens andra avdelning."
     - 
   Options:
   - flavorText:

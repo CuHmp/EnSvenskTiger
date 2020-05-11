@@ -15,19 +15,20 @@ MonoBehaviour:
   title:
     text:
     - Need for taxes?
-    - 
+    - Behov av skatt?
     - 
   flavorText:
     text:
     - Increasing taxation could help us endure through this war, but is unlikely
       to be popular.
-    - 
+    - "\xD6kande beskattning kan hj\xE4lpa oss att uth\xE4rda detta krig, men det
+      \xE4r troligtvis inte popul\xE4rt."
     - 
   Options:
   - flavorText:
       text:
       - Increase taxes
-      - 
+      - "H\xF6j skatterna"
       - 
     effect:
     - changeValue: 1
@@ -37,7 +38,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Do nothing
-      - 
+      - "G\xF6r inget"
       - 
     effect:
     - changeValue: -1

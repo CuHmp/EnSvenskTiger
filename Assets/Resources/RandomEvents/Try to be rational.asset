@@ -15,19 +15,20 @@ MonoBehaviour:
   title:
     text:
     - Try to be rational
-    - 
+    - "F\xF6rs\xF6k att vara rationell"
     - 
   flavorText:
     text:
     - Rationing food could allow us to avoid a food shortage, but would cost money
       and upset the populace.
-    - 
+    - "Ransonera mat kan till\xE5ta oss att undvika en matbrist, men skulle kosta
+      pengar och uppr\xF6rd befolkningen."
     - 
   Options:
   - flavorText:
       text:
       - Ration
-      - 
+      - Rationera
       - 
     effect:
     - changeValue: 1
@@ -39,7 +40,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Leave as is
-      - 
+      - "L\xE5t det vara"
       - 
     effect:
     - changeValue: -1

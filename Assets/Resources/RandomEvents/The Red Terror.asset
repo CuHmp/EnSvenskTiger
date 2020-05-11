@@ -15,18 +15,19 @@ MonoBehaviour:
   title:
     text:
     - The Red Terror
-    - 
+    - "Den r\xF6da terrorn"
     - 
   flavorText:
     text:
     - People fear an impending soviet invasion. Perhaps we could negotiate instead.
-    - 
+    - "v\xE5ra M\xE4nniskor fruktar en f\xF6rest\xE5ende sovjetiska invasionen. Vi
+      kan kanske f\xF6rhandla ist\xE4llet."
     - 
   Options:
   - flavorText:
       text:
       - Negotiate with the soviets.
-      - 
+      - "F\xF6rhandla med sovjeterna."
       - 
     effect:
     - changeValue: -1
@@ -36,7 +37,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - There's no need to placate them.
-      - 
+      - "Det finns ingen anledning att f\xF6rsona dem."
       - 
     effect:
     - changeValue: -1

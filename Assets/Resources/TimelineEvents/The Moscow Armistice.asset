@@ -35,6 +35,6 @@ MonoBehaviour:
   - changeValue: 1
     resource: 5
   - changeValue: -1
-    resource: 1
+    resource: 3
   date:
     _dateTime: 9/19/1944 12:00:00 AM

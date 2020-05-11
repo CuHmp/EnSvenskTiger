@@ -15,18 +15,18 @@ MonoBehaviour:
   title:
     text:
     - The Iron Price
-    - 
+    - "J\xE4rn priset"
     - 
   flavorText:
     text:
     - The United Kingdom would like to buy iron from us.
-    - 
+    - "Storbritannien skulle vilja k\xF6pa j\xE4rn fr\xE5n oss."
     - 
   Options:
   - flavorText:
       text:
       - Agree
-      - 
+      - "H\xE5ll med"
       - 
     effect:
     - changeValue: 1
@@ -38,7 +38,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Disagree
-      - 
+      - "H\xE5ll inte med"
       - 
     effect:
     - changeValue: -1

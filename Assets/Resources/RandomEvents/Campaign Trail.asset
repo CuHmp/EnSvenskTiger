@@ -15,13 +15,13 @@ MonoBehaviour:
   title:
     text:
     - Campaign Trail
-    - "F\xE4ltt\xE5g"
+    - "Kampanjsp\xE5r"
   flavorText:
     text:
     - With the elections always around the corner, it's never a bad idea to campaign
       to make sure you get re-elected.
-    - "Med ett val runt h\xF6rnet \xE4r det aldrig en d\xE5lig idee att g\xE5 p\xE5
-      en val kampanj f\xF6r att s\xE4kerst\xE4lla omvalet"
+    - "Med valen alltid runt h\xF6rnet \xE4r det aldrig en d\xE5lig id\xE9 att g\xE5
+      p\xE5 kampanj f\xF6r att se till att du blir omvald."
   Options:
   - flavorText:
       text:

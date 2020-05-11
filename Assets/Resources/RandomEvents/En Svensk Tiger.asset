@@ -23,13 +23,16 @@ MonoBehaviour:
       our national security and the possibility our secrets reaching the Germans.
       It has been proposed that we launch a campaign to promote discretion. Perhaps
       with a pun?
-    - 
+    - "Nyfikna \xF6gon och lyssnar \xF6ron finns \xF6verallt omkring oss. Det v\xE4xer
+      oro \xF6ver v\xE5r nationella s\xE4kerhet och m\xF6jligheten att v\xE5ra hemligheter
+      n\xE5r tyskarna. Det har f\xF6reslagits att vi lansera en kampanj f\xF6r att
+      fr\xE4mja diskretion. Kanske med en ordlek?"
     - 
   Options:
   - flavorText:
       text:
       - A Swede keeps silent
-      - 
+      - "En svensk h\xE5ller tyst"
       - 
     effect:
     - changeValue: -1
@@ -37,7 +40,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - No need for anything like that
-      - 
+      - "Inget behov av n\xE5got s\xE5dant"
       - 
     effect:
     - changeValue: -1

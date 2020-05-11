@@ -15,19 +15,20 @@ MonoBehaviour:
   title:
     text:
     - International aid
-    - 
+    - "Internationellt st\xF6d"
     - 
   flavorText:
     text:
     - Many countries across Europe are suffering because of the war, perhaps we should
       send them monetary aid?
-    - 
+    - "M\xE5nga l\xE4nder i Europa lider p\xE5 grund av kriget, vi borde kanske skicka
+      dem monet\xE4rt st\xF6d?"
     - 
   Options:
   - flavorText:
       text:
       - Send aid
-      - 
+      - "Skicka hj\xE4lp"
       - 
     effect:
     - changeValue: 1
@@ -39,7 +40,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Do nothing
-      - 
+      - "G\xF6r inget"
       - 
     effect:
     - changeValue: 1

@@ -32,7 +32,7 @@ MonoBehaviour:
   Effects:
   - changeValue: 5
     resource: 0
-  - changeValue: 4
+  - changeValue: 3
     resource: 1
   - changeValue: 5
     resource: 2

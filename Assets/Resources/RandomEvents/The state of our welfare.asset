@@ -15,16 +15,16 @@ MonoBehaviour:
   title:
     text:
     - The state of our welfare
-    - 
+    - "Tillst\xE5ndet f\xF6r v\xE5r v\xE4lf\xE4rd"
   flavorText:
     text:
     - Sweden's poor are struggling to get by in these trying times.
-    - 
+    - "Sveriges fattiga k\xE4mpar f\xF6r att klara sig i dessa pr\xF6vande tider."
   Options:
   - flavorText:
       text:
       - Provide them with welfare
-      - 
+      - "Ge dem v\xE4lf\xE4rd"
     effect:
     - changeValue: 1
       resource: 4
@@ -33,7 +33,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Do nothing
-      - 
+      - "G\xF6r inget"
     effect:
     - changeValue: -1
       resource: 9

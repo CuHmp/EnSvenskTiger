@@ -15,17 +15,18 @@ MonoBehaviour:
   title:
     text:
     - Food aid
-    - 
+    - "Livsmedelsbist\xE5nd"
   flavorText:
     text:
     - Many countries across europe are suffering because of the war, perhaps we should
       send them food.
-    - 
+    - "M\xE5nga l\xE4nder i Europa lider p\xE5 grund av kriget, vi borde kanske skicka
+      dem mat."
   Options:
   - flavorText:
       text:
       - Send food
-      - 
+      - Skicka mat
     effect:
     - changeValue: 1
       resource: 0
@@ -36,7 +37,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Do nothing
-      - 
+      - "G\xF6r inget"
     effect:
     - changeValue: 1
       resource: 2

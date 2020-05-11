@@ -17,7 +17,7 @@ public class TimeMaster : ManagerManager {
     //time tick variables
     private static readonly float wait_timer_ = 3.5f;
     private static float delta_time_ = 0;
-    private static int[] speed_ = { 0, 2, 4, 6, 8, 12, 16 };
+    private static int[] speed_ = { 0, 2, 4, 6, 8, 12, 16, 20, 24 };
     private static int speed_index_ = 0;
 
     private static int speed_before_paused_ = 1;

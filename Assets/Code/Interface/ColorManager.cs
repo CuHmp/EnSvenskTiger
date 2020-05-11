@@ -11,7 +11,6 @@ public class ColorManager : ManagerManager {
 
     private void Awake() {
         instance_ = this;
-
         Debug.Log("ColorManager Created");
         return;
     }
@@ -39,7 +38,9 @@ public class ColorManager : ManagerManager {
         foreach (string text in lines) {
             string[] date_and_countries = text.Split('|');
             // Removes the invisiable \n or break character
-            date_and_countries[1] = date_and_countries[1].Remove(date_and_countries[1].Length - 1); 
+            if (text[text.Length - 1] == '\r') {
+                date_and_countries[1] = date_and_countries[1].Remove(date_and_countries[1].Length - 1);
+            }
             timeline_border_changes_.Add(System.DateTime.Parse(date_and_countries[0]), date_and_countries[1]);
         }
     }

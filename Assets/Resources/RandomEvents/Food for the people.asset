@@ -15,16 +15,16 @@ MonoBehaviour:
   title:
     text:
     - Food for the people
-    - 
+    - "Mat f\xF6r folket"
   flavorText:
     text:
     - The USSR demands we send them some of our food
-    - 
+    - "Sovjetunionen kr\xE4ver att vi skickar dem lite av v\xE5r mat"
   Options:
   - flavorText:
       text:
       - We better placate them
-      - 
+      - "Vi ska b\xE4ttre f\xF6rsona dem"
     effect:
     - changeValue: 1
       resource: 4
@@ -33,7 +33,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Why would we ever agree to an arrangement like that?
-      - 
+      - "Varf\xF6r skulle vi n\xE5gonsin g\xE5 med p\xE5 ett s\xE5dant arrangemang?"
     effect:
     - changeValue: 1
       resource: 9

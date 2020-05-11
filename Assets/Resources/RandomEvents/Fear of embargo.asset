@@ -15,19 +15,20 @@ MonoBehaviour:
   title:
     text:
     - Fear of embargo
-    - 
+    - "R\xE4dsla f\xF6r embargo"
     - 
   flavorText:
     text:
     - Concerns are growing about the possibility of the allies and the axis cutting
       our food supplies.
-    - 
+    - "Oron v\xE4xer om m\xF6jligheten av allierade och nazisterna sk\xE4r v\xE5ra
+      livsmedel handel."
     - 
   Options:
   - flavorText:
       text:
       - Attempt to prevent such a scenario.
-      - 
+      - "F\xF6rs\xF6k att undvika ett s\xE5dant scenario."
       - 
     effect:
     - changeValue: -2
@@ -39,7 +40,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Irrational fears, nothing more
-      - 
+      - "Irrationell r\xE4dsla, ingenting mer"
       - 
     effect:
     - changeValue: -1

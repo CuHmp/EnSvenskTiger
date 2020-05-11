@@ -15,16 +15,16 @@ MonoBehaviour:
   title:
     text:
     - Food for Finland
-    - 
+    - "Mat f\xF6r Finland"
   flavorText:
     text:
     - Finland asks for food to supply its soldiers in the war against the soviets.
-    - 
+    - "Finland ber om mat f\xF6r att f\xF6rs\xF6rja sina soldater i kriget mot sovjeterna."
   Options:
   - flavorText:
       text:
       - Agree
-      - 
+      - "H\xE5ll med"
     effect:
     - changeValue: 1
       resource: 9
@@ -37,7 +37,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - Disagree
-      - 
+      - "H\xE5ll inte med"
     effect:
     - changeValue: 1
       resource: 4

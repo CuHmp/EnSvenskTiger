@@ -15,19 +15,20 @@ MonoBehaviour:
   title:
     text:
     - Komet sighted
-    - 
+    - Komet siktade
     - 
   flavorText:
     text:
     - A German Komet plane has been spotted in the skies above Sweden. What could
       this mean for us?
-    - 
+    - "Ett tysk Komet-plan har uppt\xE4ckts i himlen ovanf\xF6r Sverige. Vad kan
+      detta betyda f\xF6r oss?"
     - 
   Options:
   - flavorText:
       text:
       - It is an omen!
-      - 
+      - "Det \xE4r ett tecken!"
       - 
     effect:
     - changeValue: -1
@@ -35,7 +36,7 @@ MonoBehaviour:
   - flavorText:
       text:
       - The end is nigh!
-      - 
+      - "Slutet \xE4r n\xE4ra!"
       - 
     effect:
     - changeValue: -1
