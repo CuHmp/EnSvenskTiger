@@ -84,6 +84,10 @@ public class ColorManager : ManagerManager {
         }
     }
 
+    private void OnDisable() {
+        timeline_border_changes_ = new Hashtable();
+    }
+
     private static IEnumerator ChangeColourGradually(int _target, int _goal) {
         float tick = 0f;
         Color startColor = countries_[_target].GetComponent<SpriteRenderer>().color;

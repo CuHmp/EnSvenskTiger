@@ -24,7 +24,7 @@ public class ResourceManager : ManagerManager {
     }
 
     public override bool Init() {
-
+        
         tribute_duration_.Add("ALLIED", -1);
         tribute_duration_.Add("AXIS", -1);
         tribute_duration_.Add("SOVIET", -1);
@@ -32,6 +32,7 @@ public class ResourceManager : ManagerManager {
         nation_opinion_.Add("ALLIED", Player.GetResource(Resource.AlliesOpinion));
         nation_opinion_.Add("AXIS", Player.GetResource(Resource.AxisOpinion));
         nation_opinion_.Add("SOVIET", Player.GetResource(Resource.SovietOpinion));
+        
 
         TimeMaster.onTick.AddListener(Tick);
         UI_ = FindObjectOfType<UIManager>();
@@ -150,6 +151,11 @@ public class ResourceManager : ManagerManager {
             return true;
         }
         return false;
+    }
+
+    private void OnDisable() {
+        tribute_duration_ = new Dictionary<string, int>();
+        nation_opinion_ = new Dictionary<string, int>();
     }
 
     private static void CheckHighOpinion(string _nation_name, int _nation_opinion) {
