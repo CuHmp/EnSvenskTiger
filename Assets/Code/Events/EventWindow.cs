@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class EventWindow : MonoBehaviour
@@ -108,6 +109,10 @@ public class EventWindow : MonoBehaviour
 
     public void ChooseOption(int index)
     {
+        if (Event.GetType() == typeof(EndEvent))
+        {
+            SceneManager.LoadSceneAsync(0);
+        }
         Player.AddResources(OpEffects[index]);
         Player.AddResources(ConstEffects);
         gameObject.SetActive(false);
