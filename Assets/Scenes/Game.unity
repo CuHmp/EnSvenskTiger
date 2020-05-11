@@ -630,12 +630,6 @@ PrefabInstance:
       propertyPath: m_FontData.m_AlignByGeometry
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2935920961631691286, guid: fa16e34570140ae4fbb347d8a2b3c5b0,
-        type: 3}
-      propertyPath: re
-      value: 
-      objectReference: {fileID: 11400000, guid: e6c266bed38b9414699464960a511820,
-        type: 2}
     - target: {fileID: 3242794454675132589, guid: fa16e34570140ae4fbb347d8a2b3c5b0,
         type: 3}
       propertyPath: m_Name

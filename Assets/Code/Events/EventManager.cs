@@ -144,7 +144,9 @@ public class EventManager : ManagerManager
 
     public static void CreateResourceEvent(ResourceEvent re)
     {
-        if (lastResourceEvent.AddMonths(CooldownMonths) <= TimeMaster.GetTime())
+        DateTime temp = lastResourceEvent.AddMonths(CooldownMonths);
+        print(temp);
+        if (temp <= TimeMaster.GetTime())
         {
             AddEventToQueue(re);
         }
