@@ -38,7 +38,7 @@ public class EventWindow : MonoBehaviour
         Title.text = "";
         if (e.GetType() == typeof(RandomEvent))
         {
-            Title.text = "[Random Event]";
+            Title.text = "[Random Event] ";
         }
         Title.text = Title.text + e.GetTitle();
         Description.text = e.GetFlavorText();
