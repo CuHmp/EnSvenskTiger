@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -18,7 +19,10 @@ public class UIManager : MonoBehaviour
         UpdateStats();
     }
 
-    
+    public void MainMenu()
+    {
+        SceneManager.LoadSceneAsync(0);
+    }
 
     public void UpdateStats()
     {
