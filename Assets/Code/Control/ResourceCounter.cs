@@ -26,7 +26,6 @@ public class ResourceCounter : MonoBehaviour
 
     void LaunchEvent()
     {
-        print("...");
         EventManager.CreateResourceEvent(re);
     }
 }
