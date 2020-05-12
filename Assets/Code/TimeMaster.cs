@@ -24,6 +24,12 @@ public class TimeMaster : ManagerManager {
 
 
     private void Awake() {
+        month_ = 8;
+        day_ = 31;
+        year_ = 1939;
+        speed_index_ = 0;
+        speed_before_paused_ = 1;
+
         Debug.Log("TimeMaster Created");
         return;
     }

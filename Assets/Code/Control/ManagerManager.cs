@@ -29,7 +29,9 @@ public class ManagerManager : MonoBehaviour {
         }
     }
 
-
+    private void Start() {
+        
+    }
     public virtual bool Init() { return false; }
 
 }

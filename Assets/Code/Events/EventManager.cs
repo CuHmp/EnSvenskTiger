@@ -18,7 +18,7 @@ public class EventManager : ManagerManager
     static List<GameEvent> EventQueue = new List<GameEvent>();
 
     [SerializeField]
-    EventWindow eventWindow;
+    static EventWindow eventWindow = null;
     int[] RandomEventDates = { 1, 4, 7, 10 };
 
     static DateTime lastResourceEvent = new DateTime();
@@ -27,12 +27,9 @@ public class EventManager : ManagerManager
 
     void Awake()
     {
-        eventWindow = GameObject.Find("EventWindow").GetComponent<EventWindow>();
-        eventWindow.AddListner();
-        
-
-
+        EventQueue = new List<GameEvent>();
         Debug.Log("EventManager Created");
+        lastResourceEvent = new DateTime();
     }
 
     public override bool Init() {
@@ -41,6 +38,10 @@ public class EventManager : ManagerManager
         ConditionalTimelineEvents = new List<ConditionalTimelineEvent>(Resources.LoadAll<ConditionalTimelineEvent>("ConditionalTimelineEvents"));
         RandomEvents = new List<RandomEvent>(Resources.LoadAll<RandomEvent>("RandomEvents"));
         UI = FindObjectOfType<UIManager>();
+        if (eventWindow == null) {
+            eventWindow = GameObject.FindObjectOfType<EventWindow>();
+        }
+        eventWindow.AddListner();
         eventWindow.gameObject.SetActive(false);
         TimeMaster.onTick.AddListener(EventChecker);
 

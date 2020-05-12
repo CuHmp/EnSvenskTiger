@@ -24,7 +24,11 @@ public class ResourceManager : ManagerManager {
     }
 
     public override bool Init() {
-        
+        tribute_duration_ = new Dictionary<string, int>();
+        nation_opinion_ = new Dictionary<string, int>();
+        current_month_ = 1;
+        graze_period_ = 9999;
+
         tribute_duration_.Add("ALLIED", -1);
         tribute_duration_.Add("AXIS", -1);
         tribute_duration_.Add("SOVIET", -1);
@@ -157,7 +161,10 @@ public class ResourceManager : ManagerManager {
         tribute_duration_ = new Dictionary<string, int>();
         nation_opinion_ = new Dictionary<string, int>();
     }
-
+    private void OnDestroy() {
+        tribute_duration_ = null;
+        nation_opinion_ = null;
+    }
     private static void CheckHighOpinion(string _nation_name, int _nation_opinion) {
         if(_nation_opinion > 8) {
             if (tribute_duration_[_nation_name] < 0) { // makes sure that a tribute countdown has not started

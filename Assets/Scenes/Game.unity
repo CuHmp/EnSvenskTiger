@@ -148,7 +148,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 457682241}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ffbd50702200000080cd50702200000, type: 3}
+  m_Script: {fileID: 11500000, guid: 6bbab404b632e7c468ce992b1d4b0e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   initVals: {fileID: 11400000, guid: 65b3446ee98850e41b236cd8e0e2c759, type: 2}
@@ -800,6 +800,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 6.520691
       objectReference: {fileID: 0}
+    - target: {fileID: 4050885317919995710, guid: fa16e34570140ae4fbb347d8a2b3c5b0,
+        type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4560407865554908327, guid: fa16e34570140ae4fbb347d8a2b3c5b0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -964,6 +969,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635018876519838758, guid: fa16e34570140ae4fbb347d8a2b3c5b0,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5732773420838108918, guid: fa16e34570140ae4fbb347d8a2b3c5b0,
         type: 3}
@@ -1140,6 +1150,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8242852583712653897, guid: fa16e34570140ae4fbb347d8a2b3c5b0,
+        type: 3}
+      propertyPath: m_TagString
+      value: GameOver
       objectReference: {fileID: 0}
     - target: {fileID: 8439634515643670261, guid: fa16e34570140ae4fbb347d8a2b3c5b0,
         type: 3}

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.IO;
 // 1. JAN, 2. FEB, 3. MAR, 4. APR, 5. MAY, 6. JUN, 7. JUL, 8. AUG, 9. SEP, 10. OCT, 11. NOV, 12. DEC
 public class ColorManager : ManagerManager {
@@ -16,6 +17,7 @@ public class ColorManager : ManagerManager {
     }
 
     public override bool Init() {
+        timeline_border_changes_ = new Hashtable();
         AddCountries();
         ParseFile();
 
@@ -31,6 +33,7 @@ public class ColorManager : ManagerManager {
         foreach (Transform child in mapTransform) {
             countries_.Add(child.gameObject);
         }
+        countries_.Add(GameObject.FindGameObjectWithTag("GameOver"));
     }
     private static void ParseFile() {
         string file_content = Readfile("Assets/Resources/BorderChanges.txt");
@@ -53,8 +56,15 @@ public class ColorManager : ManagerManager {
     }
 
     public static void GameOver() {
-        ChangeControl("GAMEOVER", "SOLID");
+        GameOverLevel("GAMEOVER", "SOLID", 2);   
+    }
+
+    private static bool GameOverLevel(string _from, string _to, int _seconds) {
+        int target_index = FindIndex(_from);
+        int goal_index = FindIndex(_to);
         TimeMaster.TogglePlay(false);
+        instance_.StartCoroutine(GameOverWaitTime(target_index, goal_index, _seconds));
+        return false;
     }
 
     public static bool ChangeControl(string _from, string _to) {
@@ -65,6 +75,7 @@ public class ColorManager : ManagerManager {
         }
         instance_.StartCoroutine(ChangeColourGradually(target_index, goal_index));
         return true;
+
     }
 
     private static int FindIndex(string _name) {
@@ -85,7 +96,10 @@ public class ColorManager : ManagerManager {
     }
 
     private void OnDisable() {
-        timeline_border_changes_ = new Hashtable();
+        timeline_border_changes_ = null;
+    }                              
+    private void OnDestroy() {     
+        timeline_border_changes_ = null;
     }
 
     private static IEnumerator ChangeColourGradually(int _target, int _goal) {
@@ -98,5 +112,20 @@ public class ColorManager : ManagerManager {
             countries_[_target].GetComponent<SpriteRenderer>().color = Color.Lerp(startColor, countries_[_goal].GetComponent<SpriteRenderer>().color, tick);
             yield return null;
         }
+    }
+    private static IEnumerator GameOverWaitTime(int _target, int _goal, int _seconds) { // ;( hate this
+        float tick = 0f;
+        Color startColor = countries_[_target].GetComponent<Image>().color;
+        Color endColor = countries_[_goal].GetComponent<SpriteRenderer>().color;
+
+        while (countries_[_target].GetComponent<Image>().color != endColor) {
+            tick += Time.deltaTime * 1.0f;
+            countries_[_target].GetComponent<Image>().color = Color.Lerp(startColor, countries_[_goal].GetComponent<SpriteRenderer>().color, tick);
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(_seconds);
+        UIManager.LoadMainMenu();
+
     }
 }

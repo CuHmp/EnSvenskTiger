@@ -24,6 +24,10 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadSceneAsync(0);
     }
 
+    static public void LoadMainMenu() {
+        SceneManager.LoadSceneAsync(0);
+    }
+
     public void UpdateStats()
     {
         Allies.SetOpinion(Player.GetResource(Resource.AlliesOpinion));

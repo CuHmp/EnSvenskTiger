@@ -20,8 +20,8 @@ MonoBehaviour:
   flavorText:
     text:
     - People fear an impending soviet invasion. Perhaps we could negotiate instead.
-    - "v\xE5ra M\xE4nniskor fruktar en f\xF6rest\xE5ende sovjetiska invasionen. Vi
-      kan kanske f\xF6rhandla ist\xE4llet."
+    - "V\xE5r befolkning fruktar en f\xF6rest\xE5ende sovjetiska invasionen. Vi kan
+      kanske f\xF6rhandla ist\xE4llet."
     - 
   Options:
   - flavorText:

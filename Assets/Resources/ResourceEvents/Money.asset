@@ -15,7 +15,7 @@ MonoBehaviour:
   title:
     text:
     - Sell something for money?
-    - 
+    - "S\xE4lja n\xE5got f\xF6r pengar?"
     - 
   flavorText:
     text:
