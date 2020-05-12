@@ -15,7 +15,7 @@ MonoBehaviour:
   title:
     text:
     - Germany surrenders
-    - 
+    - Tyskland kapitulerar
   flavorText:
     text:
     - With the soviet Red Army fighting through Berlin and the allies not to far
@@ -23,12 +23,16 @@ MonoBehaviour:
       his replacement has announced Germany's unconditional surrender. After more
       than 5 years of fighting, the war is finally over. Congratulations, you have
       seen Sweden through this great ordeal.
-    - 
+    - "Med den r\xF6da arm\xE9n som k\xE4mpade genom Berlin och de allierade inte
+      s\xE5 l\xE5ngt efter, Adolf Hitler meddelades att ha beg\xE5tt sj\xE4lvmord
+      och hans ers\xE4ttare har meddelat Tysklands ovillkorliga kapitulation. Efter
+      mer \xE4n fem \xE5rs strider \xE4r kriget \xE4ntligen slut. Grattis, du har
+      sett Sverige genom denna stora pr\xF6vning."
   Options:
   - flavorText:
       text:
       - End game
-      - 
+      - Avsluta spelet
     effect: []
   Effects: []
   date:
