@@ -36,10 +36,10 @@ MonoBehaviour:
       text:
       - Do nothing
       - "G\xF6r inget"
-    effect: []
-  Effects:
-  - changeValue: -1
-    resource: 8
+    effect:
+    - changeValue: -1
+      resource: 8
+  Effects: []
   condition:
     minDate:
       _dateTime: 9/25/1066 12:00:00 AM

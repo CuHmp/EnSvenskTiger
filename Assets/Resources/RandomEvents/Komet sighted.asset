@@ -41,9 +41,7 @@ MonoBehaviour:
     effect:
     - changeValue: -1
       resource: 9
-  Effects:
-  - changeValue: -1
-    resource: 9
+  Effects: []
   condition:
     minDate:
       _dateTime: 6/1/1941 12:00:00 AM
