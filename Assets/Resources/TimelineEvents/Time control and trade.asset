@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccbf6fea6b19a654ba8d6bb788ef58a7, type: 3}
+  m_Name: Time control and trade
+  m_EditorClassIdentifier: 
+  title:
+    text:
+    - Time control and trade
+    - Controllera tiden och handel
+  flavorText:
+    text:
+    - You can increase and decrease the speed of the game by pressing +\- and pause
+      by pressing Space, or use the buttons next to the date. You can also trade
+      resources by pressing their icons.
+    - "Du kan g\xF6ra s\xE5 att tiden g\xE5r snabbare eller l\xE5ngsammare  genom
+      att trycka p\xE5 +/- och pause genom att trycka Space, eller anv\xE4nda knapparna
+      bredvid datumen. Du kan ocks\xE5 byta resurser genom att trycka p\xE5 deras
+      ikoner."
+  Options:
+  - flavorText:
+      text:
+      - Got it!
+      - 
+    effect: []
+  Effects: []
+  date:
+    _dateTime: 9/2/1939 12:00:00 AM

@@ -18,7 +18,7 @@ public class TimeMaster : ManagerManager {
     private static readonly float wait_timer_ = 3.5f;
     private static float delta_time_ = 0;
     private static int[] speed_ = { 0, 2, 4, 6, 8, 12, 16, 20, 24 };
-    private static int speed_index_ = speed_.Length - 1;
+    private static int speed_index_ = 0;
 
     private static int speed_before_paused_ = 1;
 
@@ -27,8 +27,8 @@ public class TimeMaster : ManagerManager {
         month_ = 8;
         day_ = 31;
         year_ = 1939;
-        speed_index_ = 0;
-        speed_before_paused_ = 1;
+        speed_index_ = speed_.Length - 1;
+        speed_before_paused_ = speed_index_;
 
         Debug.Log("TimeMaster Created");
         return;
@@ -36,7 +36,7 @@ public class TimeMaster : ManagerManager {
 
     public override bool Init() {
         
-        speed_before_paused_ = 1;
+        speed_before_paused_ = speed_index_;
         Debug.Log("TimeMaster Initialized");
         return true;
     }

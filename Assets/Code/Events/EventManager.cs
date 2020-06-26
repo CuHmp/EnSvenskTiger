@@ -39,7 +39,7 @@ public class EventManager : ManagerManager
         RandomEvents = new List<RandomEvent>(Resources.LoadAll<RandomEvent>("RandomEvents"));
         UI = FindObjectOfType<UIManager>();
         if (eventWindow == null) {
-            eventWindow = FindObjectOfType<EventWindow>();
+            eventWindow = GameObject.FindObjectOfType<EventWindow>();
         }
         eventWindow.AddListner();
         eventWindow.gameObject.SetActive(false);
